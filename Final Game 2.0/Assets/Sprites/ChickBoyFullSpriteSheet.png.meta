@@ -1,7 +1,460 @@
 fileFormatVersion: 2
 guid: 84df07e60698df64b9edcf0f59b9a45c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8110354235575882292
+    second: ChickBoy Idle 1
+  - first:
+      213: 8425498725096943901
+    second: ChickBoy Idle 2
+  - first:
+      213: -8513976251330088944
+    second: ChickBoy Idle 3
+  - first:
+      213: -9108352490896984989
+    second: ChickBoy Idle 4
+  - first:
+      213: -8855323551687492269
+    second: ChickBoy Idle 5
+  - first:
+      213: 4082900311815922269
+    second: ChickBoy Idle 6
+  - first:
+      213: 7888152002763770494
+    second: ChickBoy Idle Bonus 1
+  - first:
+      213: 6476818145782880507
+    second: ChickBoy Idle Bonus 2
+  - first:
+      213: 5489226840752642345
+    second: ChickBoy Idle Bonus 3
+  - first:
+      213: -1603415058101049818
+    second: ChickBoy Run 3
+  - first:
+      213: 2237500013555142984
+    second: ChickBoy Idle Bonus 4
+  - first:
+      213: 4655637094759326558
+    second: ChickBoy Run 7
+  - first:
+      213: 147345274226181681
+    second: ChickBoy Idle Bonus 5
+  - first:
+      213: -6900733792398388238
+    second: ChickBoy Run 8
+  - first:
+      213: -735350551438417541
+    second: ChickBoy Idle Bonus 6
+  - first:
+      213: 2642169420347695060
+    second: ChickBoyFullSpriteSheet_15
+  - first:
+      213: -8463571782790766239
+    second: ChickBoy Idle Bonus 7
+  - first:
+      213: -17708680581328937
+    second: ChickBoyFullSpriteSheet_17
+  - first:
+      213: -2817118492975853156
+    second: ChickBoy Idle Bonus 8
+  - first:
+      213: -7975348268411360733
+    second: ChickBoyFullSpriteSheet_19
+  - first:
+      213: -508603583702034595
+    second: ChickBoy Idle Bonus 9
+  - first:
+      213: 2482822399271437604
+    second: ChickBoyFullSpriteSheet_21
+  - first:
+      213: -3945265382641078826
+    second: ChickBoy Idle Bonus 10
+  - first:
+      213: -3575392415644406519
+    second: ChickBoyFullSpriteSheet_23
+  - first:
+      213: -412612792335196734
+    second: ChickBoy Idle Bonus 11
+  - first:
+      213: -5035909732362862958
+    second: ChickBoyFullSpriteSheet_25
+  - first:
+      213: -6659301730709665495
+    second: ChickBoyFullSpriteSheet_26
+  - first:
+      213: 6327782055716547611
+    second: ChickBoyFullSpriteSheet_27
+  - first:
+      213: 6942912929749561370
+    second: ChickBoyFullSpriteSheet_28
+  - first:
+      213: 8158000187135683050
+    second: ChickBoyFullSpriteSheet_29
+  - first:
+      213: -42398875516411658
+    second: ChickBoyFullSpriteSheet_30
+  - first:
+      213: -7143928205663413706
+    second: ChickBoyFullSpriteSheet_31
+  - first:
+      213: 8741352238682205922
+    second: ChickBoyFullSpriteSheet_32
+  - first:
+      213: -2247561714499322294
+    second: ChickBoy Run 1
+  - first:
+      213: 5791550519230962982
+    second: ChickBoy Run 2
+  - first:
+      213: -493282257338878791
+    second: ChickBoy Run 4
+  - first:
+      213: -8196598131050253366
+    second: ChickBoy Run 5
+  - first:
+      213: -8490765903185031269
+    second: ChickBoy Run 6
+  - first:
+      213: 5582182539860919268
+    second: ChickBoy Run 9
+  - first:
+      213: -4611484880911008363
+    second: ChickBoy Run 10
+  - first:
+      213: 1308783383178411035
+    second: ChickBoy Jump 1
+  - first:
+      213: -3535071015908917493
+    second: ChickBoy Jump 2
+  - first:
+      213: 5944917806604329991
+    second: ChickBoy Jump 3
+  - first:
+      213: 905865011836557052
+    second: ChickBoy Jump 4
+  - first:
+      213: 4864761395717202153
+    second: ChickBoy Jump 5
+  - first:
+      213: 6515253203621922024
+    second: ChickBoy Jump 6
+  - first:
+      213: 3967176252985239449
+    second: ChickBoy Jump 7
+  - first:
+      213: -3053312331544396331
+    second: ChickBoy Jump 8
+  - first:
+      213: -3155725994358814502
+    second: ChickBoy Jump 9
+  - first:
+      213: 4277103654294435150
+    second: ChickBoy Jump 10
+  - first:
+      213: 6688989825627139806
+    second: ChickBoy Jump 11
+  - first:
+      213: 3186769715817043349
+    second: ChickBoy Jump 12
+  - first:
+      213: -3283500056156430431
+    second: ChickBoy Double Jump 1
+  - first:
+      213: 778732462988165026
+    second: ChickBoy Double Jump 2
+  - first:
+      213: -7042299830812814619
+    second: ChickBoy Double Jump 3
+  - first:
+      213: -7297438093165534743
+    second: ChickBoy Double Jump 4
+  - first:
+      213: 7518545866265101406
+    second: ChickBoy Double Jump 5
+  - first:
+      213: 3530077635176011411
+    second: ChickBoy Double Jump 6
+  - first:
+      213: -1201477696155648670
+    second: ChickBoy Double Jump 7
+  - first:
+      213: -9153240565750242406
+    second: ChickBoy Double Jump 8
+  - first:
+      213: -6251617829010730079
+    second: ChickBoy Double Jump 9
+  - first:
+      213: -8101898947728951777
+    second: ChickBoy Double Jump 10
+  - first:
+      213: -5691610576688052205
+    second: ChickBoy Double Jump 11
+  - first:
+      213: 2115296583625093826
+    second: ChickBoy Double Jump 12
+  - first:
+      213: 7170435642782005190
+    second: ChickBoy Double Jump 13
+  - first:
+      213: -937434936530236158
+    second: ChickBoy Double Jump 14
+  - first:
+      213: -5622529381735996374
+    second: ChickBoy Double Jump 15
+  - first:
+      213: 8687224915344190054
+    second: ChickBoy Double Jump 16
+  - first:
+      213: -8873374604656834622
+    second: ChickBoy Double Jump 17
+  - first:
+      213: -6655363853477102122
+    second: ChickBoy Double Jump 18
+  - first:
+      213: -6963343430948026456
+    second: ChickBoy Double Jump 19
+  - first:
+      213: -895852125826748404
+    second: ChickBoy Wall 1
+  - first:
+      213: 6583119134920129130
+    second: ChickBoy Wall 2
+  - first:
+      213: -377662845392275410
+    second: ChickBoy Wall 3
+  - first:
+      213: -6754753044617681819
+    second: ChickBoy Wall 4
+  - first:
+      213: -6071577575398523789
+    second: ChickBoy Wall 5
+  - first:
+      213: -2502795748350986837
+    second: ChickBoy Wall 6
+  - first:
+      213: 2122350710924938040
+    second: ChickBoy Wall Ride 1
+  - first:
+      213: -5810971584154183247
+    second: ChickBoy Wall Ride 2
+  - first:
+      213: -8165136780412171007
+    second: ChickBoy Wall Ride 3
+  - first:
+      213: -2844294714808217775
+    second: ChickBoy Wall Ride 4
+  - first:
+      213: 8465971748056277896
+    second: ChickBoy Slide 1
+  - first:
+      213: -7916444257822417429
+    second: ChickBoy Slide 2
+  - first:
+      213: 5414152547679397508
+    second: ChickBoy Slide 3
+  - first:
+      213: 3452148239390680849
+    second: ChickBoy Slide 4
+  - first:
+      213: 2406684658584059724
+    second: ChickBoy Dash 1
+  - first:
+      213: -8612487294987128522
+    second: ChickBoy Dash 2
+  - first:
+      213: 7947271572394563959
+    second: ChickBoy Dash 3
+  - first:
+      213: -7832291587335361855
+    second: ChickBoy Dash 4
+  - first:
+      213: 3901541776805821596
+    second: ChickBoy Dash 5
+  - first:
+      213: 2311985546767081756
+    second: ChickBoy Dash 6
+  - first:
+      213: 678786659195483484
+    second: ChickBoy Dash 7
+  - first:
+      213: -928235231756074148
+    second: ChickBoy Damaged 1
+  - first:
+      213: -4984900489353410383
+    second: ChickBoy Damaged 2
+  - first:
+      213: -8886980289093873398
+    second: ChickBoy Damaged 3
+  - first:
+      213: -6709766423306080784
+    second: ChickBoy Damaged 4
+  - first:
+      213: 9149137040981173852
+    second: ChickBoy Baby Kick 1
+  - first:
+      213: 8651074775526623121
+    second: ChickBoy Baby Kick 2
+  - first:
+      213: 6625286484094428441
+    second: ChickBoy Baby Kick 3
+  - first:
+      213: -6725746845970659803
+    second: ChickBoy Baby Kick 4
+  - first:
+      213: 1352699393720412463
+    second: ChickBoy Baby Kick 5
+  - first:
+      213: -4462220470548792280
+    second: ChickBoy Thrust Kick 1
+  - first:
+      213: -130100253892602703
+    second: ChickBoy Thrust Kick 2
+  - first:
+      213: 4855341662682447991
+    second: ChickBoy Thrust Kick 3
+  - first:
+      213: -4843096307370572936
+    second: ChickBoy Thrust Kick 4
+  - first:
+      213: 6427100753194451553
+    second: ChickBoy Thrust Kick 5
+  - first:
+      213: -8027206627223693932
+    second: ChickBoy Thrust Kick 6
+  - first:
+      213: 6368106575376171647
+    second: ChickBoy Slam Kick 1
+  - first:
+      213: 2439707037547514053
+    second: ChickBoy Slam Kick 2
+  - first:
+      213: 6785314000579043458
+    second: ChickBoy Slam Kick 3
+  - first:
+      213: 148182663568324165
+    second: ChickBoy Slam Kick 4
+  - first:
+      213: -142438985243454097
+    second: ChickBoy Slam Kick 5
+  - first:
+      213: 4985107343502502446
+    second: ChickBoy Slam Kick 6
+  - first:
+      213: 1366664887047758228
+    second: ChickBoy Slam Kick 7
+  - first:
+      213: -1523578361755417833
+    second: ChickBoyFullSpriteSheet_114
+  - first:
+      213: 8805245782371018637
+    second: ChickBoy Crouch 1
+  - first:
+      213: 7925114979603424853
+    second: ChickBoy Crouch 2
+  - first:
+      213: 5352636888309911843
+    second: ChickBoy Crouch 3
+  - first:
+      213: 7843297012318880552
+    second: ChickBoy Crouch 4
+  - first:
+      213: -4784854848308680748
+    second: ChickBoy Crouch Idle 1
+  - first:
+      213: 8036040861703421131
+    second: ChickBoy Crouch Idle 2
+  - first:
+      213: -1001579917279434031
+    second: ChickBoy Crouch Idle 3
+  - first:
+      213: -740626098869037733
+    second: ChickBoy Crouch Idle 4
+  - first:
+      213: -5601392293615025000
+    second: ChickBoy Crouch Walk 1
+  - first:
+      213: -5658580210938483927
+    second: ChickBoy Crouch Walk 2
+  - first:
+      213: 7248506680112795226
+    second: ChickBoy Crouch Walk 3
+  - first:
+      213: 6704150192173684435
+    second: ChickBoy Crouch Walk 4
+  - first:
+      213: 4023225179662086147
+    second: ChickBoy Crouch Walk 5
+  - first:
+      213: -2959604214267640263
+    second: ChickBoy Crouch Walk 6
+  - first:
+      213: 4151273956472879232
+    second: ChickBoy Crouch Walk 7
+  - first:
+      213: 6732906687339230506
+    second: ChickBoy Crouch Walk 8
+  - first:
+      213: -2231736362945950861
+    second: ChickBoy Crouch Walk 9
+  - first:
+      213: -497512502595343095
+    second: ChickBoy Crouch Walk 10
+  - first:
+      213: 6737200041890719660
+    second: ChickBoy Death Forward 1
+  - first:
+      213: 6262185829093890996
+    second: ChickBoy Death Forward 2
+  - first:
+      213: 2146170535789173901
+    second: ChickBoy Death Forward 3
+  - first:
+      213: 9030117646788638729
+    second: ChickBoy Death Forward 4
+  - first:
+      213: 7525745846661082851
+    second: ChickBoy Death Forward 5
+  - first:
+      213: 135572756279252810
+    second: ChickBoy Death Forward 6
+  - first:
+      213: -2456577563355313775
+    second: ChickBoy Death Forward 7
+  - first:
+      213: 8225067162850329062
+    second: ChickBoy Death Forward 8
+  - first:
+      213: 3372220880391488374
+    second: ChickBoy Death Forward 9
+  - first:
+      213: 2902272199484154968
+    second: ChickBoy Death Backward 1
+  - first:
+      213: 6769495434242400610
+    second: ChickBoy Death Backward 2
+  - first:
+      213: 1965280060467401935
+    second: ChickBoy Death Backward 3
+  - first:
+      213: 4125901478872946719
+    second: ChickBoy Death Backward 4
+  - first:
+      213: 7036981191776254586
+    second: ChickBoy Death Backward 5
+  - first:
+      213: -6686032349899589068
+    second: ChickBoy Death Backward 6
+  - first:
+      213: -4032003400026757955
+    second: ChickBoy Death Backward 7
+  - first:
+      213: 6062752191627783412
+    second: ChickBoy Death Backward 8
+  - first:
+      213: 2156297445230409525
+    second: ChickBoyFullSpriteSheet_150
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +484,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +493,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +517,91 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +610,2863 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ChickBoy Idle 1
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1088
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd2ae11bcb327f80800000000000000
+      internalID: -8110354235575882292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle 2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1088
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11f8e443726de470800000000000000
+      internalID: 8425498725096943901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle 3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1088
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010bb5955b748d980800000000000000
+      internalID: -8513976251330088944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle 4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1088
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3647a0beaa1a89180800000000000000
+      internalID: -9108352490896984989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle 5
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1088
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d3482b5229b1580800000000000000
+      internalID: -8855323551687492269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle 6
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1088
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52ae13933069a830800000000000000
+      internalID: 4082900311815922269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle Bonus 1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1024
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a450b0478587d60800000000000000
+      internalID: 7888152002763770494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle Bonus 2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1024
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf85136b9c742e950800000000000000
+      internalID: 6476818145782880507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle Bonus 3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1024
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929d99e7ab6ad2c40800000000000000
+      internalID: 5489226840752642345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle Bonus 4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1024
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841d2e458623d0f10800000000000000
+      internalID: 2237500013555142984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle Bonus 5
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1024
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13685990fb97b0200800000000000000
+      internalID: 147345274226181681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle Bonus 6
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1024
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71202cc1928bc5f0800000000000000
+      internalID: -735350551438417541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle Bonus 7
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1024
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161acb33e4a5b8a80800000000000000
+      internalID: -8463571782790766239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle Bonus 8
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1024
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c919df708a597e8d0800000000000000
+      internalID: -2817118492975853156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle Bonus 9
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1024
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5713fd3cb311f8f0800000000000000
+      internalID: -508603583702034595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle Bonus 10
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1024
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd6803990a9f39c0800000000000000
+      internalID: -3945265382641078826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Idle Bonus 11
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1024
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd141bf9da164af0800000000000000
+      internalID: -412612792335196734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Run 1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 960
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4eff7c578e0fc0e0800000000000000
+      internalID: -2247561714499322294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Run 2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 966
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d9d752388bf5050800000000000000
+      internalID: 5791550519230962982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Run 4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 960
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4305586628729f0800000000000000
+      internalID: -493282257338878791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Run 5
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 960
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac37e106d65df3e80800000000000000
+      internalID: -8196598131050253366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Run 6
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 960
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f48a5a56dba2a80800000000000000
+      internalID: -8490765903185031269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Run 9
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 960
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e34ccfb175e77d40800000000000000
+      internalID: 5582182539860919268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Run 10
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 960
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59df63afee6b000c0800000000000000
+      internalID: -4611484880911008363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Jump 1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 896
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c78428d8bb92210800000000000000
+      internalID: 1308783383178411035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Jump 2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 898
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f38f004a7e0fec0800000000000000
+      internalID: -3535071015908917493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Jump 3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 904
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704ab816f37908250800000000000000
+      internalID: 5944917806604329991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Jump 4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 896
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf619f4cd67429c00800000000000000
+      internalID: 905865011836557052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Jump 5
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 908
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0e1ccf6ba138340800000000000000
+      internalID: 4864761395717202153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Jump 6
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 902
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e44c97f444da6a50800000000000000
+      internalID: 6515253203621922024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Jump 7
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 898
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997ec8878cd3e0730800000000000000
+      internalID: 3967176252985239449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Jump 8
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 896
+        width: 26
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ddf9f19c9470a5d0800000000000000
+      internalID: -3053312331544396331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Jump 9
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 898
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8c6c98deb9434d0800000000000000
+      internalID: -3155725994358814502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Jump 10
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 896
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45bebdcc135b5b30800000000000000
+      internalID: 4277103654294435150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Jump 11
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 896
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede25be7ec014dc50800000000000000
+      internalID: 6688989825627139806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Jump 12
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 896
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5955f3c1c2ea93c20800000000000000
+      internalID: 3186769715817043349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 832
+        width: 26
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af12dc781aae62d0800000000000000
+      internalID: -3283500056156430431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 832
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af79779c0d9eca00800000000000000
+      internalID: 778732462988165026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 832
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2db969d99b44e90800000000000000
+      internalID: -7042299830812814619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 834
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1e67eb7ba4aba90800000000000000
+      internalID: -7297438093165534743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 5
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 838
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54863261ad375860800000000000000
+      internalID: 7518545866265101406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 6
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 842
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3969732f7ea5df030800000000000000
+      internalID: 3530077635176011411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 7
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 838
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d761ba66e735fe0800000000000000
+      internalID: -1201477696155648670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 8
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 838
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93e2ce833829f080800000000000000
+      internalID: -9153240565750242406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 9
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 840
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3115ef4bacd39a0800000000000000
+      internalID: -6251617829010730079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 10
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 854
+        width: 46
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16318e25d5409f80800000000000000
+      internalID: -8101898947728951777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 11
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 850
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31807a006565301b0800000000000000
+      internalID: -5691610576688052205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 12
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 846
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c23295190b0b5d10800000000000000
+      internalID: 2115296583625093826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 13
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 846
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c732dcf931828360800000000000000
+      internalID: 7170435642782005190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 14
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 844
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d031854ef8df2f0800000000000000
+      internalID: -937434936530236158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 15
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 834
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24ed661153c8f1b0800000000000000
+      internalID: -5622529381735996374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 16
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 834
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a630b98093f8870800000000000000
+      internalID: 8687224915344190054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 17
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 832
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7057a6fc07bd480800000000000000
+      internalID: -8873374604656834622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 18
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 832
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddb58e36d563a3a0800000000000000
+      internalID: -6655363853477102122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Double Jump 19
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 832
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a70b4dfa0c3d5f90800000000000000
+      internalID: -6963343430948026456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Wall 1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 776
+        width: 24
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0071dcec3b4193f0800000000000000
+      internalID: -895852125826748404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Wall 2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 776
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6abdfe69ffeb5b50800000000000000
+      internalID: 6583119134920129130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Wall 3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 776
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28b78f94a542caf0800000000000000
+      internalID: -377662845392275410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Wall 4
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 776
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5642316e4eb4242a0800000000000000
+      internalID: -6754753044617681819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Wall 5
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 776
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37cb4202d5c6dbba0800000000000000
+      internalID: -6071577575398523789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Wall 6
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 776
+        width: 24
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba57e2af688444dd0800000000000000
+      internalID: -2502795748350986837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Wall Ride 1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 712
+        width: 26
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b8a751aba147d10800000000000000
+      internalID: 2122350710924938040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Wall Ride 2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 712
+        width: 26
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9d99ec1284b5fa0800000000000000
+      internalID: -5810971584154183247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Wall Ride 3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 712
+        width: 26
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d4e05eb5b9fae80800000000000000
+      internalID: -8165136780412171007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Wall Ride 4
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 712
+        width: 26
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fc55fc6090788d0800000000000000
+      internalID: -2844294714808217775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Slide 1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 640
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8832361437c2d7570800000000000000
+      internalID: 8465971748056277896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Slide 2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 640
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed505004e3232290800000000000000
+      internalID: -7916444257822417429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Slide 3
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 640
+        width: 52
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486e4348e0fe22b40800000000000000
+      internalID: 5414152547679397508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Slide 4
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 640
+        width: 52
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1172fd0988e78ef20800000000000000
+      internalID: 3452148239390680849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Dash 1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 578
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ff84122f2466120800000000000000
+      internalID: 2406684658584059724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Dash 2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 578
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6313ab5af6c4a7880800000000000000
+      internalID: -8612487294987128522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Dash 3
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 578
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779532e73616a4e60800000000000000
+      internalID: 7947271572394563959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Dash 4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 576
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca689f6c4c1e4390800000000000000
+      internalID: -7832291587335361855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Dash 5
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 576
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c7bd2239f052630800000000000000
+      internalID: 3901541776805821596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Dash 6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 576
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11a3e8fa92d51020800000000000000
+      internalID: 2311985546767081756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Dash 7
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 576
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55fe93ced88b6900800000000000000
+      internalID: 678786659195483484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Damaged 1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 512
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c534d2789fe3e13f0800000000000000
+      internalID: -928235231756074148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Damaged 2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 512
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b84b638a6312dab0800000000000000
+      internalID: -4984900489353410383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Damaged 3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 512
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0159a6238a1ba480800000000000000
+      internalID: -8886980289093873398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Damaged 4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 512
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd6ff4ecfe12e2a0800000000000000
+      internalID: -6709766423306080784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Baby Kick 1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 448
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c562d012aa348fe70800000000000000
+      internalID: 9149137040981173852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Baby Kick 2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 449
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1974b984caace0870800000000000000
+      internalID: 8651074775526623121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Baby Kick 3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 448
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91525ab74feb1fb50800000000000000
+      internalID: 6625286484094428441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Baby Kick 4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 448
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52607bcc0e859a2a0800000000000000
+      internalID: -6725746845970659803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Baby Kick 5
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 448
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2967928ee0c5c210800000000000000
+      internalID: 1352699393720412463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Thrust Kick 1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 384
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c7677bf120312c0800000000000000
+      internalID: -4462220470548792280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Thrust Kick 2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 390
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b41b85228ac13ef0800000000000000
+      internalID: -130100253892602703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Thrust Kick 3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 393
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770875b7483a16340800000000000000
+      internalID: 4855341662682447991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Thrust Kick 4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 392
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873cb2a719dd9ccb0800000000000000
+      internalID: -4843096307370572936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Thrust Kick 5
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 384
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1620dc13516a13950800000000000000
+      internalID: 6427100753194451553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Thrust Kick 6
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 384
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4959bad3a12a99090800000000000000
+      internalID: -8027206627223693932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Slam Kick 1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 320
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72402dc03f006850800000000000000
+      internalID: 6368106575376171647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Slam Kick 2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 320
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c84a01ef949bd120800000000000000
+      internalID: 2439707037547514053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Slam Kick 3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 324
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280aff522274a2e50800000000000000
+      internalID: 6785314000579043458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Slam Kick 4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 326
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5467cdfe8537e0200800000000000000
+      internalID: 148182663568324165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Slam Kick 5
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 320
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6595626f74f50ef0800000000000000
+      internalID: -142438985243454097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Slam Kick 6
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 320
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a68a877b8ae2540800000000000000
+      internalID: 4985107343502502446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Slam Kick 7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 322
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4912b7f497e57f210800000000000000
+      internalID: 1366664887047758228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch 1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 256
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d872b3a0364823a70800000000000000
+      internalID: 8805245782371018637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch 2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 256
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556a36bb51aabfd60800000000000000
+      internalID: 7925114979603424853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch 3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 256
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3215d53f3e2684a40800000000000000
+      internalID: 5352636888309911843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch 4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 256
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823462fb31df8dc60800000000000000
+      internalID: 7843297012318880552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch Idle 1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 191
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d761c0edd7c89db0800000000000000
+      internalID: -4784854848308680748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch Idle 2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 192
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc3b524690c58f60800000000000000
+      internalID: 8036040861703421131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch Idle 3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dae4603f5ca912f0800000000000000
+      internalID: -1001579917279434031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch Idle 4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 192
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b551781bc74c8b5f0800000000000000
+      internalID: -740626098869037733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch Walk 1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894477be26bd342b0800000000000000
+      internalID: -5601392293615025000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch Walk 2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 128
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92be4f1574fa871b0800000000000000
+      internalID: -5658580210938483927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch Walk 3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e4b2cdb6ed79460800000000000000
+      internalID: 7248506680112795226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch Walk 4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 128
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d61165641de90d50800000000000000
+      internalID: 6704150192173684435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch Walk 5
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 128
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3007a252cfd55d730800000000000000
+      internalID: 4023225179662086147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch Walk 6
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 128
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93604d4d5af5de6d0800000000000000
+      internalID: -2959604214267640263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch Walk 7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 128
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08875e44ba94c9930800000000000000
+      internalID: 4151273956472879232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch Walk 8
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 128
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25f4bca5f6107d50800000000000000
+      internalID: 6732906687339230506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch Walk 9
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 128
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bc8462a974701e0800000000000000
+      internalID: -2231736362945950861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Crouch Walk 10
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 128
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d2d7bc30b7819f0800000000000000
+      internalID: -497512502595343095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Forward 1
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 64
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7a4ad2eb75f7d50800000000000000
+      internalID: 6737200041890719660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Forward 2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 64
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb50a445d0c7e650800000000000000
+      internalID: 6262185829093890996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Forward 3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 64
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c9f1d3bbab8cd10800000000000000
+      internalID: 2146170535789173901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Forward 4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 64
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908b2d8f72c615d70800000000000000
+      internalID: 9030117646788638729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Forward 5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 64
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eeea1479f1d07860800000000000000
+      internalID: 7525745846661082851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Forward 6
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 96
+        width: 70
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47de3b14b6a1e100800000000000000
+      internalID: 135572756279252810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Forward 7
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 96
+        width: 58
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199030db8bb78edd0800000000000000
+      internalID: -2456577563355313775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Forward 8
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 96
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e18c6f910f452270800000000000000
+      internalID: 8225067162850329062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Forward 9
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 96
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673c3ef16098cce20800000000000000
+      internalID: 3372220880391488374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Backward 1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854aeb34031f64820800000000000000
+      internalID: 2902272199484154968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Backward 2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261a5aa2b3412fd50800000000000000
+      internalID: 6769495434242400610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Backward 3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 2
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc451507dc3164b10800000000000000
+      internalID: 1965280060467401935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Backward 4
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 2
+        width: 62
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f181b7af885224930800000000000000
+      internalID: 4125901478872946719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Backward 5
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 32
+        width: 72
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7abde24c1168a160800000000000000
+      internalID: 7036981191776254586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Backward 6
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 32
+        width: 56
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43af67b70017633a0800000000000000
+      internalID: -6686032349899589068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Backward 7
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 32
+        width: 62
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4ec3825427b08c0800000000000000
+      internalID: -4032003400026757955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Death Backward 8
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 32
+        width: 62
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fce1371ff8332450800000000000000
+      internalID: 6062752191627783412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Run 3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 970
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626ef5aff768fb9e0800000000000000
+      internalID: -1603415058101049818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Run 7
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 968
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53e24465452c9040800000000000000
+      internalID: 4655637094759326558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChickBoy Run 8
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 970
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f35f8e6d2bab30a0800000000000000
+      internalID: -6900733792398388238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

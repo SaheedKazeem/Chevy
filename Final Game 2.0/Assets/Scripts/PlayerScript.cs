@@ -20,6 +20,7 @@ public class PlayerScript : MonoBehaviour
 
         if (collision.gameObject.tag == "TileMap")
         {
+            anim.SetBool("isGrounded", true);
             isGrounded = true;
             CanDJump = true;
             anim.ResetTrigger("isDJumping");
@@ -78,6 +79,8 @@ public class PlayerScript : MonoBehaviour
                 RB.velocity = Vector2.up * JumpVelocity;
                 isJumping = true;
                 isGrounded = false;
+                anim.SetBool("isGrounded", false);
+
             }
             else if (!isGrounded && CanDJump == true)
             {

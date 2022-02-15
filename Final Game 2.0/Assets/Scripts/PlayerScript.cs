@@ -51,6 +51,7 @@ public class PlayerScript : MonoBehaviour
     {
         //walking animation
         anim.SetFloat("Speed", Mathf.Abs(XInput));
+       
     }
     void Movement()
     {

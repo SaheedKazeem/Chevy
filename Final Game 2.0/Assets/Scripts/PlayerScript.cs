@@ -6,14 +6,21 @@ using UnityEngine.Events;
 public class PlayerScript : MonoBehaviour
 {
     float XInput, YInput, Speed;
+    public Animator anim;
+    Rigidbody2D RB;
+    
+    [Header("Jump")]
     [Range(1, 10)]
     public float JumpVelocity;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
     bool isJumping, isGrounded, CanDJump, isDJumping;
 
-    Rigidbody2D RB;
-    public Animator anim;
+    [Header("Dash")]
+    public float DashSpeed; 
+    public float startDashTime;
+    float dashTime;
+    Vector2 direction;
     // Start is called before the first frame update
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -59,6 +66,7 @@ public class PlayerScript : MonoBehaviour
         XInput = Input.GetAxisRaw("Horizontal");
         YInput = Input.GetAxisRaw("Vertical");
         Jump();
+        Dash();
         //Flipping Sprite
 
         if (XInput >= 0.01f)
@@ -102,6 +110,46 @@ public class PlayerScript : MonoBehaviour
         }
 
         BetterJump();
+    }
+    void Dash()
+    {
+      
+        direction = Vector2.zero;
+        dashTime = startDashTime;
+            if (direction == Vector2.zero)
+            {
+                if(Input.GetKeyDown(KeyCode.D))
+                {
+                    direction = Vector2.right;
+                }
+                else if (Input.GetKeyDown(KeyCode.A))
+                {
+                    direction = Vector2.left;
+                }
+            }
+            else
+            {
+                if (dashTime <= 0)
+                {
+                    direction = Vector2.zero;
+                    dashTime = startDashTime;
+                    RB.velocity = Vector2.zero;
+                }
+                else
+                {
+                    dashTime -= Time.deltaTime;
+
+                    if (direction == Vector2.right)
+                    {
+                        RB.velocity = Vector2.right * DashSpeed;
+                    }
+                    else if (direction == Vector2.left)
+                    {
+                        RB.velocity = Vector2.left * DashSpeed;
+                    }
+                }
+            }
+
     }
     void BetterJump()
     {

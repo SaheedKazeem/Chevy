@@ -19314,12 +19314,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fe5bc01186854c47911e2ac6f4d9b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _allowDoubleJump: 0
+  _allowDoubleJump: 1
   _allowDash: 1
   _allowCrouch: 1
   _groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 256
   _detectorCount: 3
   _detectionRayLength: 0.1
   _crouchSizeModifier: 0.5
@@ -19333,7 +19333,7 @@ MonoBehaviour:
   _fallClamp: -60
   _minFallSpeed: 100
   _maxFallSpeed: 120
-  _jumpHeight: 35
+  _jumpHeight: 25
   _jumpApexThreshold: 10
   _coyoteTimeThreshold: 7
   _jumpBuffer: 7

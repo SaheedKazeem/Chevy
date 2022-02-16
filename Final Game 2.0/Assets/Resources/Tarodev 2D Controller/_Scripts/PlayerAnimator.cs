@@ -53,6 +53,7 @@ namespace MasterController
 
         private void OnDoubleJumping()
         {
+            _anim.SetTrigger(DJumpKey);
             _source.PlayOneShot(_doubleJumpClip);
             _doubleJumpParticles.Play();
         }
@@ -61,6 +62,7 @@ namespace MasterController
         {
             if (dashing)
             {
+                _anim.SetTrigger(DashKey);
                 _dashParticles.Play();
                 _dashRingTransform.up = new Vector3(_player.Input.X, _player.Input.Y);
                 _dashRingParticles.Play();
@@ -119,11 +121,13 @@ namespace MasterController
         {
             if (crouching)
             {
+                _anim.SetBool(CrouchKey, true);
                 _sprite.size = _defaultSpriteSize * _crouchScaleModifier;
                 _source.PlayOneShot(_slideClips[Random.Range(0, _slideClips.Length)], Mathf.InverseLerp(0, 5, Mathf.Abs(_movement.x)));
             }
             else
             {
+                _anim.SetBool(CrouchKey, false);
                 _sprite.size = _defaultSpriteSize;
             }
         }
@@ -150,7 +154,7 @@ namespace MasterController
                 SetColor(_moveParticles);
             }
             // walking animation
-            _anim.SetFloat(Speed, Mathf.Abs(_player.Input.X));
+            _anim.SetFloat(RunKey, Mathf.Abs(_player.Input.X));
 
             _movement = _player.RawMovement; // Previous frame movement is more valuable
         }
@@ -176,7 +180,10 @@ namespace MasterController
         private static readonly int GroundedKey = Animator.StringToHash("Grounded");
         private static readonly int IdleSpeedKey = Animator.StringToHash("IdleSpeed");
         private static readonly int JumpKey = Animator.StringToHash("Jump");
-        private static readonly int Speed = Animator.StringToHash("Speed");
+        private static readonly int RunKey = Animator.StringToHash("Speed");
+        private static readonly int DJumpKey = Animator.StringToHash("isDoubleJumping");
+        private static readonly int DashKey = Animator.StringToHash("isDashing");
+        private static readonly int CrouchKey = Animator.StringToHash("isCrouching");
 
         #endregion
     }

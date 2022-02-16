@@ -149,6 +149,8 @@ namespace MasterController
                 _currentGradient = new ParticleSystem.MinMaxGradient(r.color * 0.9f, r.color * 1.2f);
                 SetColor(_moveParticles);
             }
+            // walking animation
+            _anim.SetFloat(Speed, Mathf.Abs(_player.Input.X));
 
             _movement = _player.RawMovement; // Previous frame movement is more valuable
         }
@@ -174,6 +176,7 @@ namespace MasterController
         private static readonly int GroundedKey = Animator.StringToHash("Grounded");
         private static readonly int IdleSpeedKey = Animator.StringToHash("IdleSpeed");
         private static readonly int JumpKey = Animator.StringToHash("Jump");
+        private static readonly int Speed = Animator.StringToHash("Speed");
 
         #endregion
     }

@@ -471,6 +471,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &934694215 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8931638543184989646, guid: f70c62151281a3349a1456d2cbfe6fc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 500019011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1092428388
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,6 +510,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1209017472 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8931638541987077541, guid: f70c62151281a3349a1456d2cbfe6fc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 500019011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1209017477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209017472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf0111e1ce43aa4d96152b12c222a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 934694215}
+  attackPoint: {fileID: 0}
+  attackRange: 0.5
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1779346134
 GameObject:
   m_ObjectHideFlags: 0

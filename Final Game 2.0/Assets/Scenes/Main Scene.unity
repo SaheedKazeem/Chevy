@@ -269,10 +269,55 @@ PrefabInstance:
       propertyPath: _allowDoubleJump
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8931638541987077538, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: _moveClamp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931638541987077538, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: _crouchSlowdownFrames
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931638541987077538, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: _immediateCrouchSlowdownThreshold
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 8931638541987077541, guid: f70c62151281a3349a1456d2cbfe6fc3,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931638542005127932, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.r
+      value: 0.2392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931638542005127932, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.g
+      value: 0.22352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931638542005127932, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.b
+      value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931638542684797227, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.r
+      value: 0.58431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931638542684797227, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.g
+      value: 0.45882356
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931638542684797227, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.b
+      value: 0.80392164
       objectReference: {fileID: 0}
     - target: {fileID: 8931638542972942641, guid: f70c62151281a3349a1456d2cbfe6fc3,
         type: 3}
@@ -523,7 +568,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209017472}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6bf0111e1ce43aa4d96152b12c222a27, type: 3}
   m_Name: 
@@ -593,7 +638,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c60a190f3019ce6489a8d3adfe05b2b1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1792453, g: 0.14965291, b: 0.14965291, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

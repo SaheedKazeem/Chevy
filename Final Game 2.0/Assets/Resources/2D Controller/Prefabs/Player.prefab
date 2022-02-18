@@ -29161,7 +29161,7 @@ MonoBehaviour:
   _source: {fileID: 8931638542972942655}
   _groundMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 256
   _jumpParticles: {fileID: 8931638542005127932}
   _launchParticles: {fileID: 8931638543510135240}
   _moveParticles: {fileID: 8931638542684797227}
@@ -29175,7 +29175,7 @@ MonoBehaviour:
   _maxIdleSpeed: 2
   _maxParticleFallSpeed: -40
   _crouchScaleModifier: {x: 1, y: 0.6}
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 1509426459138172562}
   _doubleJumpParticles: {fileID: 1177963491}
   _doubleJumpClip: {fileID: 8300000, guid: 0d11fd7368b306b4c900241e3dadf28f, type: 3}
   _dashClip: {fileID: 8300000, guid: 6d2d16f85c087ea419d323141cd2145c, type: 3}

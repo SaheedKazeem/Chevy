@@ -213,7 +213,7 @@ namespace MasterController
 
                 // Lower the collider by the difference extent
                 var difference = _defaultColliderSize.y - (_defaultColliderSize.y * _crouchSizeModifier);
-                _collider.offset = -new Vector2(0, difference * 0.5f);
+                _collider.offset = -new Vector2(0, difference * 0.45f) ;
             }
             else if (!_grounded || (Input.Y >= 0 && _crouching))
             {

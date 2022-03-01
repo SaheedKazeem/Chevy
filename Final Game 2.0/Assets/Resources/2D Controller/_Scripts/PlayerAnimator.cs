@@ -184,7 +184,7 @@ namespace MasterController
         private static readonly int DJumpKey = Animator.StringToHash("isDoubleJumping");
         private static readonly int DashKey = Animator.StringToHash("isDashing");
         private static readonly int CrouchKey = Animator.StringToHash("isCrouching");
-       
+        private static readonly int DamagedKey = Animator.StringToHash("isDamaged");
 
         #endregion
     }

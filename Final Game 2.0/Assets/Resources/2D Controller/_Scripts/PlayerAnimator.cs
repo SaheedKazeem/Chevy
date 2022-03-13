@@ -136,6 +136,14 @@ namespace TarodevController {
         private static readonly int GroundedKey = Animator.StringToHash("Grounded");
         private static readonly int IdleSpeedKey = Animator.StringToHash("IdleSpeed");
         private static readonly int JumpKey = Animator.StringToHash("Jump");
+<<<<<<< HEAD
+=======
+        private static readonly int RunKey = Animator.StringToHash("Speed");
+        private static readonly int DJumpKey = Animator.StringToHash("isDoubleJumping");
+        private static readonly int DashKey = Animator.StringToHash("isDashing");
+        private static readonly int CrouchKey = Animator.StringToHash("isCrouching");
+       
+>>>>>>> parent of 020eeea (Added animation and updated tilemap)
 
         #endregion
     }

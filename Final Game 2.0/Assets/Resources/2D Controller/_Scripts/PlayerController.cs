@@ -4,17 +4,18 @@ using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace MasterController
-{
+namespace TarodevController {
     /// <summary>
-    /// Thanks to Tarodev for the amazing player controller, Credits:https://tarodev.itch.io/
+    /// Hey!
+    /// Tarodev here. I built this controller as there was a severe lack of quality & free 2D controllers out there.
+    /// Right now it only contains movement and jumping, but it should be pretty easy to expand... I may even do it myself
+    /// if there's enough interest. You can play and compete for best times here: https://tarodev.itch.io/
+    /// If you hve any questions or would like to brag about your score, come to discord: https://discord.gg/GqeHHnhHpz
     /// </summary>
     [RequireComponent(typeof(BoxCollider2D), typeof(Rigidbody2D))]
-    public class PlayerController : MonoBehaviour, IPlayerController
-    {
-        [SerializeField] private bool _allowDoubleJump, _allowDash, _allowCrouch;
-
-
+    public class PlayerController : MonoBehaviour, IPlayerController {
+        [SerializeField] private bool _allowDoubleJump, _allowDash;
+        
         // Public for external hooks
         public FrameInput Input { get; private set; }
         public Vector3 RawMovement { get; private set; }
@@ -22,7 +23,6 @@ namespace MasterController
         public event Action<bool> OnGroundedChanged;
         public event Action OnJumping, OnDoubleJumping;
         public event Action<bool> OnDashingChanged;
-        public event Action<bool> OnCrouchingChanged;
 
         private Rigidbody2D _rb;
         private BoxCollider2D _collider;
@@ -30,20 +30,14 @@ namespace MasterController
         private Vector3 _velocity;
         private float _currentHorizontalSpeed, _currentVerticalSpeed;
         private int _fixedFrame;
-
-        void Awake()
-        {
+        
+        void Awake() {
             _rb = GetComponent<Rigidbody2D>();
             _collider = GetComponent<BoxCollider2D>();
-
-            _defaultColliderSize = _collider.size;
-            _defaultColliderOffset = _collider.offset;
         }
 
 
-
-        private void Update()
-        {
+        private void Update() {
             // Calculate velocity
             _velocity = (transform.position - _lastPosition) / Time.deltaTime;
             _lastPosition = transform.position;
@@ -51,14 +45,11 @@ namespace MasterController
             GatherInput();
         }
 
-        void FixedUpdate()
-        {
+        void FixedUpdate() {
             _fixedFrame++;
-            _frameClamp = _moveClamp;
 
             RunCollisionChecks();
 
-            CalculateCrouch();
             CalculateWalk();
             CalculateJumpApex();
             CalculateGravity();
@@ -69,21 +60,17 @@ namespace MasterController
 
         #region Gather Input
 
-        private void GatherInput()
-        {
-            Input = new FrameInput
-            {
+        private void GatherInput() {
+            Input = new FrameInput {
                 JumpDown = UnityEngine.Input.GetButtonDown("Jump"),
                 JumpHeld = UnityEngine.Input.GetButton("Jump"),
                 DashDown = UnityEngine.Input.GetButtonDown("Dash"),
-
                 X = UnityEngine.Input.GetAxisRaw("Horizontal"),
                 Y = UnityEngine.Input.GetAxisRaw("Vertical")
             };
 
             if (Input.DashDown) _dashToConsume = true;
-            if (Input.JumpDown)
-            {
+            if (Input.JumpDown) {
                 _lastJumpPressed = _fixedFrame;
                 _jumpToConsume = true;
             }
@@ -105,20 +92,17 @@ namespace MasterController
 
 
         // We use these raycast checks for pre-collision information
-        private void RunCollisionChecks()
-        {
+        private void RunCollisionChecks() {
             // Generate ray ranges. 
             CalculateRayRanged();
 
             // Ground
             var groundedCheck = RunDetection(_raysDown);
-            if (_grounded && !groundedCheck)
-            {
+            if (_grounded && !groundedCheck) {
                 _timeLeftGrounded = _fixedFrame; // Only trigger when first leaving
                 OnGroundedChanged?.Invoke(false);
             }
-            else if (!_grounded && groundedCheck)
-            {
+            else if (!_grounded && groundedCheck) {
                 _coyoteUsable = true; // Only trigger when first touching
                 _executedBufferedJump = false;
                 _doubleJumpUsable = true;
@@ -133,14 +117,12 @@ namespace MasterController
             // The rest
             _hittingCeiling = RunDetection(_raysUp);
 
-            bool RunDetection(RayRange range)
-            {
+            bool RunDetection(RayRange range) {
                 return EvaluateRayPositions(range).Any(point => Physics2D.Raycast(point, range.Dir, _detectionRayLength, _groundLayer));
             }
         }
 
-        private void CalculateRayRanged()
-        {
+        private void CalculateRayRanged() {
             var b = _collider.bounds;
 
             _raysDown = new RayRange(b.min.x, b.min.y, b.max.x, b.min.y, Vector2.down);
@@ -150,26 +132,21 @@ namespace MasterController
         }
 
 
-        private IEnumerable<Vector2> EvaluateRayPositions(RayRange range)
-        {
-            for (var i = 0; i < _detectorCount; i++)
-            {
+        private IEnumerable<Vector2> EvaluateRayPositions(RayRange range) {
+            for (var i = 0; i < _detectorCount; i++) {
                 var t = (float)i / (_detectorCount - 1);
                 yield return Vector2.Lerp(range.Start, range.End, t);
             }
         }
 
-        private void OnDrawGizmos()
-        {
+        private void OnDrawGizmos() {
             if (!_collider) _collider = GetComponent<BoxCollider2D>();
 
             // Rays
             if (!Application.isPlaying) CalculateRayRanged();
             Gizmos.color = Color.blue;
-            foreach (var range in new List<RayRange> { _raysDown, _raysUp })
-            {
-                foreach (var point in EvaluateRayPositions(range))
-                {
+            foreach (var range in new List<RayRange> { _raysDown, _raysUp }) {
+                foreach (var point in EvaluateRayPositions(range)) {
                     Gizmos.DrawRay(point, range.Dir * _detectionRayLength);
                 }
             }
@@ -177,58 +154,6 @@ namespace MasterController
 
         #endregion
 
-        #region Crouch
-
-        [SerializeField, Header("CROUCH")] private float _crouchSizeModifier = 0.5f;
-        [SerializeField] private float _crouchSpeedModifier = 0.5f;
-        [SerializeField] private int _crouchSlowdownFrames = 20;
-        [SerializeField] private float _immediateCrouchSlowdownThreshold = 0.1f;
-        private Vector2 _defaultColliderSize, _defaultColliderOffset;
-        private float _velocityOnCrouch;
-        private bool _crouching;
-        private int _frameStartedCrouching;
-
-        private bool CanStand => Physics2D.OverlapBox((Vector2)transform.position + _defaultColliderOffset + new Vector2(0, 0.1f), _defaultColliderSize, 0, _groundLayer) == null;
-
-        void CalculateCrouch()
-        {
-            if (!_allowCrouch) return;
-
-
-            if (_crouching)
-            {
-                var immediate = _velocityOnCrouch <= _immediateCrouchSlowdownThreshold ? _crouchSlowdownFrames : 0;
-                var crouchPoint = Mathf.InverseLerp(0, _crouchSlowdownFrames, _fixedFrame - _frameStartedCrouching + immediate);
-                _frameClamp *= Mathf.Lerp(1, _crouchSpeedModifier, crouchPoint);
-            }
-
-            if (_grounded && Input.Y < 0 && !_crouching)
-            {
-                _crouching = true;
-                OnCrouchingChanged?.Invoke(true);
-                _velocityOnCrouch = Mathf.Abs(_velocity.x);
-                _frameStartedCrouching = _fixedFrame;
-
-                _collider.size = _defaultColliderSize * new Vector2(1, _crouchSizeModifier);
-
-                // Lower the collider by the difference extent
-                var difference = _defaultColliderSize.y - (_defaultColliderSize.y * _crouchSizeModifier);
-                _collider.offset = -new Vector2(0, difference * 0.45f) ;
-            }
-            else if (!_grounded || (Input.Y >= 0 && _crouching))
-            {
-                // Detect obstruction in standing area. Add a .1 y buffer to avoid the ground.
-                if (!CanStand) return;
-
-                _crouching = false;
-                OnCrouchingChanged?.Invoke(false);
-
-                _collider.size = _defaultColliderSize;
-                _collider.offset = _defaultColliderOffset;
-            }
-        }
-        
-        #endregion
 
         #region Walk
 
@@ -236,30 +161,25 @@ namespace MasterController
         [SerializeField] private float _moveClamp = 13;
         [SerializeField] private float _deAcceleration = 60f;
         [SerializeField] private float _apexBonus = 2;
-        private float _frameClamp;
 
-        private void CalculateWalk()
-        {
-            if (Input.X != 0)
-            {
+        private void CalculateWalk() {
+            if (Input.X != 0) {
                 // Set horizontal move speed
                 _currentHorizontalSpeed += Input.X * _acceleration * Time.fixedDeltaTime;
 
                 // clamped by max frame movement
-                _currentHorizontalSpeed = Mathf.Clamp(_currentHorizontalSpeed, -_frameClamp, _frameClamp);
+                _currentHorizontalSpeed = Mathf.Clamp(_currentHorizontalSpeed, -_moveClamp, _moveClamp);
 
                 // Apply bonus at the apex of a jump
                 var apexBonus = Mathf.Sign(Input.X) * _apexBonus * _apexPoint;
                 _currentHorizontalSpeed += apexBonus * Time.fixedDeltaTime;
             }
-            else
-            {
+            else {
                 // No input. Let's slow the character down
                 _currentHorizontalSpeed = Mathf.MoveTowards(_currentHorizontalSpeed, 0, _deAcceleration * Time.fixedDeltaTime);
             }
 
-            if (_currentHorizontalSpeed > 0 && _colRight || _currentHorizontalSpeed < 0 && _colLeft)
-            {
+            if (_currentHorizontalSpeed > 0 && _colRight || _currentHorizontalSpeed < 0 && _colLeft) {
                 // Don't pile up useless horizontal
                 _currentHorizontalSpeed = 0;
             }
@@ -274,18 +194,15 @@ namespace MasterController
         [SerializeField] private float _maxFallSpeed = 120f;
         private float _fallSpeed;
 
-        private void CalculateGravity()
-        {
-            if (_grounded)
-            {
+
+        private void CalculateGravity() {
+            if (_grounded) {
                 // // Move out of the ground
-                if (_currentVerticalSpeed < 0)
-                {
+                if (_currentVerticalSpeed < 0) {
                     _currentVerticalSpeed = 0;
                 }
             }
-            else
-            {
+            else {
                 // Add downward force while ascending if we ended the jump early
                 var fallSpeed = _endedJumpEarly && _currentVerticalSpeed > 0 ? _fallSpeed * _jumpEndEarlyGravityModifier : _fallSpeed;
 
@@ -317,26 +234,19 @@ namespace MasterController
         private bool HasBufferedJump => (_grounded || _cornerStuck) && _lastJumpPressed + _jumpBuffer > _fixedFrame && !_executedBufferedJump;
         private bool CanDoubleJump => _allowDoubleJump && _doubleJumpUsable && !_coyoteUsable;
 
-        private void CalculateJumpApex()
-        {
-            if (!_grounded)
-            {
+        private void CalculateJumpApex() {
+            if (!_grounded) {
                 // Gets stronger the closer to the top of the jump
                 _apexPoint = Mathf.InverseLerp(_jumpApexThreshold, 0, Mathf.Abs(_velocity.y));
                 _fallSpeed = Mathf.Lerp(_minFallSpeed, _maxFallSpeed, _apexPoint);
             }
-            else
-            {
+            else {
                 _apexPoint = 0;
             }
         }
 
-        private void CalculateJump()
-        {
-            if (_crouching && !CanStand) return;
-
-            if (_jumpToConsume && CanDoubleJump)
-            {
+        private void CalculateJump() {
+            if (_jumpToConsume && CanDoubleJump) {
                 _currentVerticalSpeed = _jumpHeight;
                 _doubleJumpUsable = false;
                 _endedJumpEarly = false;
@@ -346,8 +256,7 @@ namespace MasterController
 
 
             // Jump if: grounded or within coyote threshold || sufficient jump buffer
-            if ((_jumpToConsume && CanUseCoyote) || HasBufferedJump)
-            {
+            if ((_jumpToConsume && CanUseCoyote) || HasBufferedJump) {
                 _currentVerticalSpeed = _jumpHeight;
                 _endedJumpEarly = false;
                 _coyoteUsable = false;
@@ -378,11 +287,9 @@ namespace MasterController
         private bool _dashing;
         private bool _dashToConsume;
 
-        void CalculateDash()
-        {
+        void CalculateDash() {
             if (!_allowDash) return;
-            if (_dashToConsume && _canDash)
-            {
+            if (_dashToConsume && _canDash) {
                 _dashToConsume = false;
                 var vel = new Vector2(Input.X, _grounded && Input.Y < 0 ? 0 : Input.Y);
                 if (vel == Vector2.zero) return;
@@ -393,13 +300,11 @@ namespace MasterController
                 _startedDashing = _fixedFrame;
             }
 
-            if (_dashing)
-            {
+            if (_dashing) {
                 _currentHorizontalSpeed = _dashVel.x;
                 _currentVerticalSpeed = _dashVel.y;
                 // Cancel when the time is out or we've reached our max safety distance
-                if (_startedDashing + _dashLength < _fixedFrame)
-                {
+                if (_startedDashing + _dashLength < _fixedFrame) {
                     _dashing = false;
                     OnDashingChanged?.Invoke(false);
                     _currentVerticalSpeed = 0;
@@ -414,8 +319,7 @@ namespace MasterController
         #region Move
 
         // We cast our bounds before moving to avoid future collisions
-        private void MoveCharacter()
-        {
+        private void MoveCharacter() {
             RawMovement = new Vector3(_currentHorizontalSpeed, _currentVerticalSpeed); // Used externally
             var move = RawMovement * Time.fixedDeltaTime;
 
@@ -431,8 +335,7 @@ namespace MasterController
 
         // This is a little hacky, but it's very difficult to fix.
         // This will allow walking and jumping while right on the corner of a ledge.
-        void RunCornerPrevention()
-        {
+        void RunCornerPrevention() {
             // There's a fiddly thing where the rays will not detect ground (right inline with the collider),
             // but the collider won't fit. So we detect if we're meant to be moving but not.
             // The downside to this is if you stand still on a corner and jump straight up, it won't trigger the land
@@ -446,5 +349,4 @@ namespace MasterController
 
         #endregion
     }
-
 }

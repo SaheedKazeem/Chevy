@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace TarodevController {
+namespace MasterControl {
 	public struct FrameInput {
 		public float X,Y;
 		public bool JumpDown;
@@ -10,18 +10,18 @@ namespace TarodevController {
 	}
 
 	public interface IPlayerController {
-		public FrameInput Input { get; }
-		public Vector3 RawMovement { get; }
-		public bool Grounded { get; }
+		FrameInput Input { get; }
+		Vector3 RawMovement { get; }
+		bool Grounded { get; }
 
-		public event Action<bool> OnGroundedChanged;
-		public event Action OnJumping,OnDoubleJumping;
-		public event Action<bool> OnDashingChanged;
+		event Action<bool> OnGroundedChanged;
+		event Action OnJumping,OnDoubleJumping;
+		event Action<bool> OnDashingChanged;
 	}
     
 	public interface IExtendedPlayerController : IPlayerController {
-		public bool DoubleJumpingThisFrame { get; set; }
-		public bool Dashing { get; set; }  
+		bool DoubleJumpingThisFrame { get; set; }
+		bool Dashing { get; set; }  
 	}
 
 	public struct RayRange {

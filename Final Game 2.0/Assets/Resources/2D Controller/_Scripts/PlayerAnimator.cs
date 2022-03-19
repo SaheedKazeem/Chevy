@@ -1,11 +1,9 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace TarodevController {
+namespace MasterControl {
     /// <summary>
-    /// This is a pretty filthy script. I was just arbitrarily adding to it as I went.
-    /// You won't find any programming prowess here.
-    /// This is a supplementary script to help with effects and animation. Basically a juice factory.
+    /// Thanks to Tarodev for the amazing player controller, Credits:https://tarodev.itch.io/
     /// </summary>
     public class PlayerAnimator : MonoBehaviour {
         [SerializeField] private Animator _anim;
@@ -40,6 +38,7 @@ namespace TarodevController {
         }
 
         private void OnDoubleJumping() {
+            _anim.SetTrigger(DJumpKey);
             _source.PlayOneShot(_doubleJumpClip);
             _doubleJumpParticles.Play();
         }
@@ -136,6 +135,11 @@ namespace TarodevController {
         private static readonly int GroundedKey = Animator.StringToHash("Grounded");
         private static readonly int IdleSpeedKey = Animator.StringToHash("IdleSpeed");
         private static readonly int JumpKey = Animator.StringToHash("Jump");
+        private static readonly int RunKey = Animator.StringToHash("Speed");
+        private static readonly int DJumpKey = Animator.StringToHash("isDoubleJumping");
+        private static readonly int DashKey = Animator.StringToHash("isDashing");
+        private static readonly int CrouchKey = Animator.StringToHash("isCrouching");
+        private static readonly int DamagedKey = Animator.StringToHash("isDamaged");
 
         #endregion
     }

@@ -8,7 +8,7 @@ namespace MasterController
     /// You won't find any programming prowess here.
     /// This is a supplementary script to help with effects and animation. Basically a juice factory.
     /// </summary>
-    public class PlayerAnimator : MonoBehaviour
+    public class PlayerAnimator1 : MonoBehaviour
     {
         [SerializeField] private Animator _anim;
         [SerializeField] private AudioSource _source;

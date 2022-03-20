@@ -45,7 +45,9 @@ namespace MasterControl {
 
         private void OnDashing(bool dashing) {
            
-            if (dashing) {
+            if (dashing) 
+            {
+                _anim.SetTrigger(DashKey);
                 _dashParticles.Play();
                 _dashRingTransform.up = new Vector3(_player.Input.X, _player.Input.Y);
                 _dashRingParticles.Play();

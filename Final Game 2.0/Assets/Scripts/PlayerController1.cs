@@ -10,7 +10,7 @@ namespace MasterController
     /// Thanks to Tarodev for the amazing player controller, Credits:https://tarodev.itch.io/
     /// </summary>
     [RequireComponent(typeof(BoxCollider2D), typeof(Rigidbody2D))]
-    public class PlayerController : MonoBehaviour, IPlayerController
+    public class PlayerController1 : MonoBehaviour, IPlayerController
     {
         [SerializeField] private bool _allowDoubleJump, _allowDash, _allowCrouch;
 

@@ -19231,10 +19231,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8931638543417178172}
   - component: {fileID: 8931638541987077536}
+  - component: {fileID: 4939486333069828533}
   - component: {fileID: 8931638541987077539}
   - component: {fileID: 8931638541987077538}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Backup Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19276,6 +19277,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &4939486333069828533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8931638541987077541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fe5bc01186854c47911e2ac6f4d9b9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _allowDoubleJump: 1
+  _allowDash: 1
+  _allowCrouch: 1
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  _detectorCount: 3
+  _detectionRayLength: 0.1
+  _crouchSizeModifier: 0.5
+  _crouchSpeedModifier: 0.5
+  _crouchSlowdownFrames: 20
+  _immediateCrouchSlowdownThreshold: 0.1
+  _acceleration: 90
+  _moveClamp: 13
+  _deAcceleration: 60
+  _apexBonus: 2
+  _fallClamp: -40
+  _minFallSpeed: 80
+  _maxFallSpeed: 120
+  _jumpHeight: 30
+  _jumpApexThreshold: 10
+  _coyoteTimeThreshold: 7
+  _jumpBuffer: 7
+  _jumpEndEarlyGravityModifier: 3
+  _dashPower: 50
+  _dashLength: 3
+  _dashEndHorizontalMultiplier: 0.25
 --- !u!61 &8931638541987077539
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28917,9 +28957,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8931638542972942640}
+  - component: {fileID: 2409251744112932814}
   - component: {fileID: 8931638542972942655}
   - component: {fileID: 8931638542972942654}
-  - component: {fileID: 8931638542972942641}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -28943,6 +28983,41 @@ Transform:
   m_Father: {fileID: 8931638543417178172}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2409251744112932814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8931638542972942643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f5b17c22420b0c459e595820b856d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _anim: {fileID: 8931638543184989646}
+  _source: {fileID: 0}
+  _groundMask:
+    serializedVersion: 2
+    m_Bits: 256
+  _jumpParticles: {fileID: 8931638542005127932}
+  _launchParticles: {fileID: 8931638543510135240}
+  _moveParticles: {fileID: 8931638542684797227}
+  _landParticles: {fileID: 8931638541637702875}
+  _footsteps: []
+  _maxTilt: 5
+  _tiltSpeed: 30
+  _maxIdleSpeed: 2
+  _maxParticleFallSpeed: -40
+  _crouchScaleModifier: {x: 1, y: 0.5}
+  _sprite: {fileID: 1509426459138172562}
+  _doubleJumpParticles: {fileID: 1177963491}
+  _doubleJumpClip: {fileID: 0}
+  _dashClip: {fileID: 0}
+  _dashParticles: {fileID: 492478017}
+  _dashRingParticles: {fileID: 928355531}
+  _dashRingTransform: {fileID: 341224713}
+  _slideClips: []
 --- !u!82 &8931638542972942655
 AudioSource:
   m_ObjectHideFlags: 0
@@ -29145,47 +29220,6 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!114 &8931638542972942641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8931638542972942643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f5b17c22420b0c459e595820b856d78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _anim: {fileID: 8931638543184989646}
-  _source: {fileID: 8931638542972942655}
-  _groundMask:
-    serializedVersion: 2
-    m_Bits: 256
-  _jumpParticles: {fileID: 8931638542005127932}
-  _launchParticles: {fileID: 8931638543510135240}
-  _moveParticles: {fileID: 8931638542684797227}
-  _landParticles: {fileID: 8931638541637702875}
-  _footsteps:
-  - {fileID: 8300000, guid: 5d94063f45167b04ab62585e436da58c, type: 3}
-  - {fileID: 8300000, guid: b5803c17557c59c40bf3a6d69cb46cb3, type: 3}
-  - {fileID: 8300000, guid: 1876767bf7cbf284394dc3817af9593c, type: 3}
-  _maxTilt: 5
-  _tiltSpeed: 30
-  _maxIdleSpeed: 2
-  _maxParticleFallSpeed: -40
-  _crouchScaleModifier: {x: 1, y: 0.6}
-  _sprite: {fileID: 1509426459138172562}
-  _doubleJumpParticles: {fileID: 1177963491}
-  _doubleJumpClip: {fileID: 8300000, guid: 0d11fd7368b306b4c900241e3dadf28f, type: 3}
-  _dashClip: {fileID: 8300000, guid: 6d2d16f85c087ea419d323141cd2145c, type: 3}
-  _dashParticles: {fileID: 492478017}
-  _dashRingParticles: {fileID: 928355531}
-  _dashRingTransform: {fileID: 341224713}
-  _slideClips:
-  - {fileID: 8300000, guid: 8fdca7d062c9999429d95ab7c56a5986, type: 3}
-  - {fileID: 8300000, guid: b18b6bd081c46eb48890d12e052cbbd9, type: 3}
-  - {fileID: 8300000, guid: a42ad5ad97b59d042bb11c6713a26100, type: 3}
 --- !u!1 &8931638543094642591
 GameObject:
   m_ObjectHideFlags: 0

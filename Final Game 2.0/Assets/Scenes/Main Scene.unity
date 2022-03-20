@@ -431,6 +431,21 @@ PrefabInstance:
       propertyPath: InitialModule.startColor.minColor.b
       value: 0.7176471
       objectReference: {fileID: 0}
+    - target: {fileID: 8931638541637702875, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.r
+      value: 0.58431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931638541637702875, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.g
+      value: 0.45882356
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931638541637702875, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.b
+      value: 0.80392164
+      objectReference: {fileID: 0}
     - target: {fileID: 8931638541987077536, guid: f70c62151281a3349a1456d2cbfe6fc3,
         type: 3}
       propertyPath: m_UseAutoMass
@@ -523,6 +538,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8931638542972942641, guid: f70c62151281a3349a1456d2cbfe6fc3,
         type: 3}
+      propertyPath: _footsteps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931638542972942641, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
       propertyPath: _groundMask.m_Bits
       value: 256
       objectReference: {fileID: 0}
@@ -536,6 +556,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8931638542972942641, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: _footsteps.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5d94063f45167b04ab62585e436da58c, type: 3}
+    - target: {fileID: 8931638542972942641, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: _footsteps.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5d94063f45167b04ab62585e436da58c, type: 3}
     - target: {fileID: 8931638542972942655, guid: f70c62151281a3349a1456d2cbfe6fc3,
         type: 3}
       propertyPath: m_Enabled

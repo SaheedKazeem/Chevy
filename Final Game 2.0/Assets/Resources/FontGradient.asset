@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FontGradient
   m_EditorClassIdentifier: 
   colorMode: 3
-  topLeft: {r: 0.65882355, g: 0.5372549, b: 0.65882355, a: 1}
-  topRight: {r: 0.69803923, g: 0.5254902, b: 0.69803923, a: 1}
-  bottomLeft: {r: 0.3882353, g: 0.14901961, b: 0.38039216, a: 0.050980393}
-  bottomRight: {r: 0.48235294, g: 0.3529412, b: 0.47843137, a: 1}
+  topLeft: {r: 0.6698113, g: 0.6161, b: 0.6698113, a: 1}
+  topRight: {r: 0.745283, g: 0.5238074, b: 0.745283, a: 1}
+  bottomLeft: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 0.050980393}
+  bottomRight: {r: 0.38679248, g: 0.2536045, b: 0.38275647, a: 1}

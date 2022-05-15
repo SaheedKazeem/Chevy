@@ -5,10 +5,10 @@ using UnityEngine.Audio;
 
 public class SettingsScript : MonoBehaviour
 {
-    public AudioMixer ReftoAudioMixer;
+    public AudioMixer RefToAudioMixer;
     // Start is called before the first frame update
   public void SetVolume (float volume)
   {
-      ReftoAudioMixer.SetFloat("Volume", volume);
+      RefToAudioMixer.SetFloat("Volume", volume);
   }
 }

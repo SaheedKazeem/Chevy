@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PauseMenuScript : MonoBehaviour
 {
    public static bool GameIsPaused = false;
-   public GameObject PauseMenuUI;
+   public GameObject PauseMenuUI, RefToResumeButton, RefToOptionsButton, RefToBackButton;
 
     // Update is called once per frame
     void Update()
@@ -28,22 +29,32 @@ public class PauseMenuScript : MonoBehaviour
     public void Resume()
     {
         PauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
         GameIsPaused = false;
+        Time.timeScale = 1f;
     }
     void Pause()
     {
         PauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
         GameIsPaused = true;
+        Time.timeScale = 0f;
+        //clear selected button 
+        EventSystem.current.SetSelectedGameObject(null);
+        //set a new selected button
+        EventSystem.current.SetSelectedGameObject(RefToResumeButton);
     }
     public void LoadMenu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadSceneAsync(0);
+
+        //clear selected button 
+        EventSystem.current.SetSelectedGameObject(null);
+        //set a new selected button
+        EventSystem.current.SetSelectedGameObject(RefToOptionsButton);
     }
     public void QuitGame()
     {
         Application.Quit(); //the goodbye button
     }
+    
 }

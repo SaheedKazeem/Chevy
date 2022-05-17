@@ -31,6 +31,7 @@ namespace MasterController
         private float _currentHorizontalSpeed, _currentVerticalSpeed;
         private int _fixedFrame;
 
+
         void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
@@ -49,6 +50,8 @@ namespace MasterController
             _lastPosition = transform.position;
 
             GatherInput();
+
+
         }
 
         void FixedUpdate()
@@ -93,7 +96,7 @@ namespace MasterController
 
         #region Collisions
 
-        [Header("COLLISION")] [SerializeField] private LayerMask _groundLayer;
+        [Header("COLLISION")][SerializeField] private LayerMask _groundLayer;
         [SerializeField] private int _detectorCount = 3;
         [SerializeField] private float _detectionRayLength = 0.1f;
 
@@ -213,7 +216,7 @@ namespace MasterController
 
                 // Lower the collider by the difference extent
                 var difference = _defaultColliderSize.y - (_defaultColliderSize.y * _crouchSizeModifier);
-                _collider.offset = -new Vector2(0, difference * 0.45f) ;
+                _collider.offset = -new Vector2(0, difference * 0.45f);
             }
             else if (!_grounded || (Input.Y >= 0 && _crouching))
             {
@@ -227,12 +230,12 @@ namespace MasterController
                 _collider.offset = _defaultColliderOffset;
             }
         }
-        
+
         #endregion
 
         #region Walk
 
-        [Header("WALKING")] [SerializeField] private float _acceleration = 90;
+        [Header("WALKING")][SerializeField] private float _acceleration = 90;
         [SerializeField] private float _moveClamp = 13;
         [SerializeField] private float _deAcceleration = 60f;
         [SerializeField] private float _apexBonus = 2;
@@ -269,7 +272,7 @@ namespace MasterController
 
         #region Gravity
 
-        [Header("GRAVITY")] [SerializeField] private float _fallClamp = -40f;
+        [Header("GRAVITY")][SerializeField] private float _fallClamp = -40f;
         [SerializeField] private float _minFallSpeed = 80f;
         [SerializeField] private float _maxFallSpeed = 120f;
         private float _fallSpeed;
@@ -301,7 +304,7 @@ namespace MasterController
 
         #region Jump
 
-        [Header("JUMPING")] [SerializeField] private float _jumpHeight = 30;
+        [Header("JUMPING")][SerializeField] private float _jumpHeight = 30;
         [SerializeField] private float _jumpApexThreshold = 10f;
         [SerializeField] private int _coyoteTimeThreshold = 7;
         [SerializeField] private int _jumpBuffer = 7;
@@ -367,7 +370,7 @@ namespace MasterController
 
         #region Dash
 
-        [Header("DASH")] [SerializeField] private float _dashPower = 50;
+        [Header("DASH")][SerializeField] private float _dashPower = 50;
         [SerializeField] private int _dashLength = 3;
         [SerializeField] private float _dashEndHorizontalMultiplier = 0.25f;
         private float _startedDashing;

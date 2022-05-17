@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class DialogueManagerScript : MonoBehaviour
 {
+    public TextMeshProUGUI nameText, dialogueText;
+    public GameObject RefToDialogueBox;
     Queue<string> sentences;
     // Start is called before the first frame update
     void Start()
@@ -21,6 +25,17 @@ public class DialogueManagerScript : MonoBehaviour
         }
         DisplayNextSentence();
     }
+    void PressTriangleToSubmit()
+    {
+        if (RefToDialogueBox.activeInHierarchy)
+        {
+            if (Input.GetButtonDown("Submit"))
+            {
+                DisplayNextSentence();
+            }
+        }
+
+    }
     public void DisplayNextSentence()
     {
         if (sentences.Count == 0)
@@ -29,11 +44,11 @@ public class DialogueManagerScript : MonoBehaviour
             return;
         }
         string sentence = sentences.Dequeue();
-        Debug.Log(sentence);
+        dialogueText.text = sentence;
     }
     void EndDialogue()
     {
-        Debug.Log ("End of conversation");
+        Debug.Log("End of conversation");
     }
 
 

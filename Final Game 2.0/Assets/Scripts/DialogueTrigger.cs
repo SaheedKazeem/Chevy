@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public Dialogue RefToDialogue;
+    public Dialogue dialogue;
     
+
+    public void TriggerDialogue()
+    {
+        FindObjectOfType<DialogueManagerScript>().StartDialogue(dialogue);
+    }
+  
+   
 }

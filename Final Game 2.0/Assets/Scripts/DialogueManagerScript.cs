@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class DialogueManagerScript : MonoBehaviour
 {
+    Queue<string> sentences;
     // Start is called before the first frame update
     void Start()
     {
-        
+        sentences = new Queue<string>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

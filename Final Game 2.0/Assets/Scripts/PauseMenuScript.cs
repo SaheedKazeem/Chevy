@@ -34,7 +34,7 @@ public class PauseMenuScript : MonoBehaviour
         Time.timeScale = 1f;
          EventSystem.current.SetSelectedGameObject(null);
         //set a new selected button
-        EventSystem.current.SetSelectedGameObject(RefToDialogueMan.RefToDialogueBox);
+        EventSystem.current.SetSelectedGameObject(RefToDialogueMan.RefToSkipButton);
     }
     void Pause()
     {

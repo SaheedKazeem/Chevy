@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class PlayerCombatScript : MonoBehaviour
 {
+    public int maxHealth = 100, currentHealth;
+    public HealthBarScript RefToHealthBarScript; 
     public Animator anim;
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
     // Start is called before the first frame update
-
+    void Start() 
+    {
+        currentHealth = maxHealth;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -30,6 +35,10 @@ public class PlayerCombatScript : MonoBehaviour
             }
         }
 
+    }
+    public void TakeDamage(int Damage)
+    {
+        currentHealth -= Damage;
     }
     private void OnDrawGizmosSelected()
     {

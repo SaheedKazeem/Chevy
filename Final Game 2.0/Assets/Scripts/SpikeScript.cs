@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class SpikeScript : MonoBehaviour
 {
-    private PlayerCombatScript RefToPlayer;
+    public PlayerCombatScript RefToPlayer;
     Animator SpikeAnimator;
     bool spikeHasBeenPressed;
     private void Awake()
     {
         SpikeAnimator = GetComponent<Animator>();
-        RefToPlayer = GetComponentInParent<PlayerCombatScript>();
+        RefToPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombatScript>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,6 +20,7 @@ public class SpikeScript : MonoBehaviour
             if(spikeHasBeenPressed == true)
             {
                 SpikeAnimator.SetTrigger(SpikeActivateKey);
+                RefToPlayer.TakeDamage(20);
             }
             
         }

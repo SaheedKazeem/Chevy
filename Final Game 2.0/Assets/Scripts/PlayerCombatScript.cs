@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerCombatScript : MonoBehaviour
 {
     public int maxHealth = 100, currentHealth;
-    public HealthBarScript RefToHealthBarScript; 
+    public  HealthBarScript RefToHealthBar; 
     public Animator anim;
     public Transform attackPoint;
     public float attackRange = 0.5f;
@@ -14,6 +14,8 @@ public class PlayerCombatScript : MonoBehaviour
     void Start() 
     {
         currentHealth = maxHealth;
+        
+        RefToHealthBar.SetMaxHealth(maxHealth);
     }
     // Update is called once per frame
     void Update()
@@ -39,6 +41,7 @@ public class PlayerCombatScript : MonoBehaviour
     public void TakeDamage(int Damage)
     {
         currentHealth -= Damage;
+        RefToHealthBar.SetHealth(currentHealth);
     }
     private void OnDrawGizmosSelected()
     {

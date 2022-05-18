@@ -8,6 +8,7 @@ public class PauseMenuScript : MonoBehaviour
 {
    public static bool GameIsPaused = false;
    public GameObject PauseMenuUI, RefToResumeButton, RefToOptionsButton, RefToBackButton;
+   public DialogueManagerScript RefToDialogueMan;
 
     // Update is called once per frame
     void Update()
@@ -31,6 +32,9 @@ public class PauseMenuScript : MonoBehaviour
         PauseMenuUI.SetActive(false);
         GameIsPaused = false;
         Time.timeScale = 1f;
+         EventSystem.current.SetSelectedGameObject(null);
+        //set a new selected button
+        EventSystem.current.SetSelectedGameObject(RefToDialogueMan.RefToDialogueBox);
     }
     void Pause()
     {

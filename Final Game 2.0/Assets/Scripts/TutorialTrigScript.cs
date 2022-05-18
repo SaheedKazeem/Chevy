@@ -13,12 +13,9 @@ public class TutorialTrigScript : MonoBehaviour
   {
       TutorialHasBeenTriggered = true;
         if (TutorialHasBeenTriggered)
-      {
-           //clear selected button 
-        EventSystem.current.SetSelectedGameObject(null);
-        //set a new selected button
-        EventSystem.current.SetSelectedGameObject(RefToDialogueBox);
+      {  
         RefToDialogueTrigger.TriggerDialogue();
+        Destroy(gameObject);
       }
       
   }

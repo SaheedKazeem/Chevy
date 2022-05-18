@@ -616,7 +616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab9d00f4b4b3292419567f728d0e17c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RefToDialogueBox: {fileID: 0}
+  RefToDialogueBox: {fileID: 1226813825}
   RefToDialogueTrigger: {fileID: 1226813827}
 --- !u!61 &268973694
 BoxCollider2D:
@@ -1029,8 +1029,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1664176653}
   - {fileID: 1226813826}
+  - {fileID: 1664176653}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1650,8 +1650,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.15000153, y: 0.29000092}
+  m_SizeDelta: {x: -6.0222473, y: -5.883415}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &835300417
 MonoBehaviour:
@@ -1700,14 +1700,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 5
+  m_fontSizeBase: 5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 6.5
@@ -2383,6 +2383,7 @@ GameObject:
   - component: {fileID: 1226813829}
   - component: {fileID: 1226813828}
   - component: {fileID: 1226813827}
+  - component: {fileID: 1226813831}
   m_Layer: 5
   m_Name: DialogueButton
   m_TagString: Untagged
@@ -2404,7 +2405,7 @@ RectTransform:
   - {fileID: 835300416}
   - {fileID: 2047278941}
   m_Father: {fileID: 424997547}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2512,6 +2513,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226813825}
   m_CullTransparentMesh: 0
+--- !u!95 &1226813831
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226813825}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e3380d8fdec5d54ea3cd71803b6ec30, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1421450604
 GameObject:
   m_ObjectHideFlags: 0
@@ -3053,7 +3073,7 @@ RectTransform:
   - {fileID: 895423080}
   - {fileID: 993836960}
   m_Father: {fileID: 424997547}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3765,6 +3785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28b03af3e493404aa6410eea6422a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RefToAnimator: {fileID: 1226813831}
   nameText: {fileID: 0}
   dialogueText: {fileID: 835300417}
   RefToDialogueBox: {fileID: 1226813825}
@@ -9616,7 +9637,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047278940}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!212 &2124840293 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 1509426459138172562, guid: f70c62151281a3349a1456d2cbfe6fc3,

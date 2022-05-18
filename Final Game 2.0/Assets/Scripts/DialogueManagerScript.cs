@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class DialogueManagerScript : MonoBehaviour
 {
+    public Animator RefToAnimator;
     public TextMeshProUGUI nameText, dialogueText;
-    public GameObject RefToDialogueBox;
+    public GameObject RefToDialogueBox, RefToSkipButton;
+
     Queue<string> sentences;
     // Start is called before the first frame update
     void Start()
@@ -16,6 +19,7 @@ public class DialogueManagerScript : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        RefToAnimator.SetBool("DialogueBoxIsOpen", true);
         Debug.Log("Starting conversation with " + dialogue.name);
         sentences.Clear();
 
@@ -23,12 +27,19 @@ public class DialogueManagerScript : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
+        EventSystem.current.SetSelectedGameObject(null);
+        //set a new selected button
+        EventSystem.current.SetSelectedGameObject(RefToSkipButton);
         DisplayNextSentence();
     }
-    void PressTriangleToSubmit()
+    public void PressTriangleToSubmit()
     {
         if (RefToDialogueBox.activeInHierarchy)
         {
+        //clear selected button 
+        EventSystem.current.SetSelectedGameObject(null);
+        //set a new selected button
+        EventSystem.current.SetSelectedGameObject(RefToSkipButton);
             if (Input.GetButtonDown("Submit"))
             {
                 DisplayNextSentence();
@@ -49,6 +60,7 @@ public class DialogueManagerScript : MonoBehaviour
     void EndDialogue()
     {
         Debug.Log("End of conversation");
+        RefToAnimator.SetBool("DialogueBoxIsOpen", false);
     }
 
 

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6377626921821750002}
   - component: {fileID: 6377626921821750015}
   - component: {fileID: 6377626921821750014}
+  - component: {fileID: 7206192764656351964}
   m_Layer: 0
   m_Name: Spike_Obstacle
   m_TagString: Untagged
@@ -116,6 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6bc2dcc2f12f3f4289ac76e5c399a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RefToPlayer: {fileID: 0}
 --- !u!70 &6377626921821750014
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -132,3 +134,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.35}
   m_Size: {x: 0.97, y: 0.33}
   m_Direction: 1
+--- !u!114 &7206192764656351964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6377626921821750003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9d00f4b4b3292419567f728d0e17c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RefToDialogueBox: {fileID: 0}
+  RefToDialogueTrigger: {fileID: 0}

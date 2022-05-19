@@ -15,7 +15,7 @@ public class TutorialTrigScript : MonoBehaviour
         if (TutorialHasBeenTriggered)
       {  
         RefToDialogueTrigger.TriggerDialogue();
-        Destroy(gameObject);
+        Destroy(this.GetComponent<TutorialTrigScript>());
       }
       
   }

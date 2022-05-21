@@ -10833,6 +10833,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1859468779}
+    - target: {fileID: 2315100968275684301, guid: d17988519f3851943a8776e04db48699,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315100968275684301, guid: d17988519f3851943a8776e04db48699,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2315100968559404304, guid: d17988519f3851943a8776e04db48699,
         type: 3}
       propertyPath: dialogue.sentences.Array.size

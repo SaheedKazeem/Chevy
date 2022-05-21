@@ -7,6 +7,7 @@ public class SlimeMobScript : MonoBehaviour
     public float speed;
     public Transform target;
     public float minimumDistance;
+    public PlayerCombatScript RefToPlayerCombatScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,8 @@ public class SlimeMobScript : MonoBehaviour
         else
         {
             //Attack Code
+            RefToPlayerCombatScript.TakeDamage(30);
+
         }
     }
 

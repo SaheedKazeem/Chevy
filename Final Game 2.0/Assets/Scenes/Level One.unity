@@ -331,6 +331,18 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &413926709 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8931638542972942641, guid: f70c62151281a3349a1456d2cbfe6fc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 500019011}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f5b17c22420b0c459e595820b856d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &424997543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,7 +1168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.25
   target: {fileID: 1209017476}
-  minimumDistance: 2
+  minimumDistance: 1
+  RefToPlayerCombatScript: {fileID: 1209017477}
 --- !u!1 &1163180885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,6 +1263,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   RefToHealthBar: {fileID: 1642297117}
+  RefToPlayerAnimator: {fileID: 413926709}
   anim: {fileID: 934694215}
   attackPoint: {fileID: 0}
   attackRange: 0.5

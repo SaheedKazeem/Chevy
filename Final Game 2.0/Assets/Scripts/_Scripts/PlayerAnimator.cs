@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using Random = UnityEngine.Random;
 
 namespace MasterController
@@ -131,6 +133,10 @@ namespace MasterController
                 _sprite.size = _defaultSpriteSize;
             }
         }
+        public void HasBeenDamaged()
+        {
+            _anim.SetTrigger(isDamaged);
+        }
 
         void Update()
         {
@@ -184,7 +190,7 @@ namespace MasterController
         private static readonly int DJumpKey = Animator.StringToHash("isDoubleJumping");
         private static readonly int DashKey = Animator.StringToHash("isDashing");
         private static readonly int CrouchKey = Animator.StringToHash("isCrouching");
-       
+        private static readonly int isDamaged = Animator.StringToHash("isDamaged");
 
         #endregion
     }

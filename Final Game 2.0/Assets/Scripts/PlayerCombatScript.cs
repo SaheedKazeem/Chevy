@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MasterController;
 
 public class PlayerCombatScript : MonoBehaviour
 {
     public int maxHealth = 100, currentHealth;
-    public  HealthBarScript RefToHealthBar; 
+    public  HealthBarScript RefToHealthBar;
+    public PlayerAnimator RefToPlayerAnimator;
     public Animator anim;
     public Transform attackPoint;
     public float attackRange = 0.5f;
@@ -42,6 +44,8 @@ public class PlayerCombatScript : MonoBehaviour
     {
         currentHealth -= Damage;
         RefToHealthBar.SetHealth(currentHealth);
+        RefToPlayerAnimator.HasBeenDamaged();
+        
     }
     private void OnDrawGizmosSelected()
     {

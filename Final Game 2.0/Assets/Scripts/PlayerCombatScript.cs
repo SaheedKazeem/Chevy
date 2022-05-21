@@ -22,7 +22,7 @@ public class PlayerCombatScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetButtonDown("BKick"))
         {
             BabyKick();
         }
@@ -35,7 +35,7 @@ public class PlayerCombatScript : MonoBehaviour
             // Damage them
             foreach (Collider2D enemy in EnemiesHit)
             {
-                Debug.Log("We hit " + enemy.name);
+               enemy.GetComponent<SlimeMobScript>().TakeDamage(50);
             }
         }
 

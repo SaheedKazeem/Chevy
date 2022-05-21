@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SlimeMobScript : MonoBehaviour
 {
+    public int maxHealth = 100;
+    int currentHealth;
     public float speed;
     public Transform target;
     public float minimumDistance;
@@ -11,7 +13,24 @@ public class SlimeMobScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentHealth = maxHealth;
+    }
 
+    public void TakeDamage (int damage)
+    {
+        currentHealth -= damage;
+        // Play hurt animation
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Enemy died!");
+        // Die animation
+        // Destroy object
     }
 
     // Update is called once per frame

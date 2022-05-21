@@ -510,6 +510,21 @@ PrefabInstance:
       propertyPath: RefToHealthBar
       value: 
       objectReference: {fileID: 1642297117}
+    - target: {fileID: 4162763347359629052, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: attackPoint
+      value: 
+      objectReference: {fileID: 1079293690}
+    - target: {fileID: 4162763347359629052, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: attackRange
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4162763347359629052, guid: f70c62151281a3349a1456d2cbfe6fc3,
+        type: 3}
+      propertyPath: enemyLayers.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 8931638541637702875, guid: f70c62151281a3349a1456d2cbfe6fc3,
         type: 3}
       propertyPath: InitialModule.startColor.maxGradient.key0.r
@@ -1000,6 +1015,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1079293690 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6327459951363120643, guid: f70c62151281a3349a1456d2cbfe6fc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 500019011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1136015913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,7 +1035,7 @@ GameObject:
   - component: {fileID: 1136015918}
   - component: {fileID: 1136015917}
   - component: {fileID: 1136015919}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Slime Mob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1140,7 +1161,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!114 &1136015919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1148,11 +1169,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136015913}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30bc227eeff1cfb44b8114c57c4a3046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
   speed: 1.25
   target: {fileID: 1209017476}
   minimumDistance: 1

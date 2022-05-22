@@ -10,15 +10,31 @@ public class SlimeMobScript : MonoBehaviour
     public Transform target;
     public float minimumDistance;
     public PlayerCombatScript RefToPlayerCombatScript;
+    public Animator RefToAnim;
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
     }
 
-    public void TakeDamage (int damage)
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        //Make the object lock in place
+        if (other.gameObject.CompareTag("Player"))
+        {
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+
+    }
+    private void OnCollisionExit2D(Collision2D other)
+    {
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+    }
+
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        RefToAnim.SetTrigger("hasBeenHit");
         // Play hurt animation
         if (currentHealth <= 0)
         {
@@ -30,6 +46,8 @@ public class SlimeMobScript : MonoBehaviour
     {
         Debug.Log("Enemy died!");
         // Die animation
+        gameObject.SetActive(false);
+
         // Destroy object
     }
 

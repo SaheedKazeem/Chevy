@@ -23,13 +23,11 @@ public class SlimeMobScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+            
         }
 
     }
-    private void OnCollisionExit2D(Collision2D other)
-    {
-            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
-    }
+
 
     public void TakeDamage(int damage)
     {

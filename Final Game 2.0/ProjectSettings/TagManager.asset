@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TileMap
   - Health Bar
+  - Enemy
   layers:
   - Default
   - TransparentFX

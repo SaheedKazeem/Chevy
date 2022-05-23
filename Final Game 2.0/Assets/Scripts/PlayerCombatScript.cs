@@ -83,6 +83,7 @@ public class PlayerCombatScript : MonoBehaviour
     {
        
        anim.SetTrigger("hasDied");
+       hasDied = true;
         
     }
     

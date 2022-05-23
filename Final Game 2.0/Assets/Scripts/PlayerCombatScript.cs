@@ -45,6 +45,11 @@ public class PlayerCombatScript : MonoBehaviour
             }
             
         }
+        if (currentHealth <= 0)
+        {
+
+        }
+
 
     }
     void BabyKick()
@@ -70,6 +75,11 @@ public class PlayerCombatScript : MonoBehaviour
         RefToPlayerAnimator.HasBeenDamaged();
 
     }
+    public void onDeath()
+    {
+
+    }
+    
     private void OnDrawGizmosSelected()
     {
         if (attackPoint == null)
@@ -85,5 +95,8 @@ public class PlayerCombatScript : MonoBehaviour
             RefToKnockback.enabled = false;
        }
     }
+    
+
+
 }
 

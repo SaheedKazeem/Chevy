@@ -10,7 +10,7 @@ public class PlayerCombatScript : MonoBehaviour
     public PlayerAnimator RefToPlayerAnimator;
     CapsuleCollider2D RefToKnockbackCollider;
     Knockback RefToKnockback;
-   
+   public bool hasDied;
     public Animator anim;
     public Transform attackPoint;
     public float attackRange = 0.5f;
@@ -25,8 +25,12 @@ public class PlayerCombatScript : MonoBehaviour
         RefToHealthBar.SetMaxHealth(maxHealth);
         RefToKnockbackCollider = attackPoint.GetComponent<CapsuleCollider2D>();
         RefToKnockback = attackPoint.GetComponent<Knockback>();
-        RefToKnockback.enabled = false;
-        RefToKnockbackCollider.enabled = false;
+        if (RefToKnockback != null)
+        {
+            RefToKnockback.enabled = false;
+            RefToKnockbackCollider.enabled = false;
+        }
+        
        
         
     }
@@ -47,7 +51,7 @@ public class PlayerCombatScript : MonoBehaviour
         }
         if (currentHealth <= 0)
         {
-
+            onDeath();
         }
 
 
@@ -77,7 +81,9 @@ public class PlayerCombatScript : MonoBehaviour
     }
     public void onDeath()
     {
-
+       
+       anim.SetTrigger("hasDied");
+        
     }
     
     private void OnDrawGizmosSelected()

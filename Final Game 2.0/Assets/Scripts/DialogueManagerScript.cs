@@ -71,6 +71,7 @@ public class DialogueManagerScript : MonoBehaviour
     } 
     void EndDialogue()
     {
+        HasSentenceEnded = true;
         Debug.Log("End of conversation");
         RefToAnimator.SetBool("DialogueBoxIsOpen", false);
     }

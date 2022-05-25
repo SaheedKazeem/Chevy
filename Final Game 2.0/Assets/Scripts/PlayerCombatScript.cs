@@ -8,10 +8,12 @@ public class PlayerCombatScript : MonoBehaviour
 {
     public int maxHealth = 100, currentHealth;
     public HealthBarScript RefToHealthBar;
+    public DialogueManagerScript RefToDialogueManager;
+    public DialogueTrigger RefToDialogueTrigger;
     public PlayerAnimator RefToPlayerAnimator;
     CapsuleCollider2D RefToKnockbackCollider;
     Knockback RefToKnockback;
-   public bool hasDied;
+    public bool hasDied;
     public Animator anim;
     public Transform attackPoint;
     public float attackRange = 0.5f;
@@ -31,12 +33,12 @@ public class PlayerCombatScript : MonoBehaviour
             RefToKnockback.enabled = false;
             RefToKnockbackCollider.enabled = false;
         }
-        
-       
-        
+
+
+
     }
-    
-    
+
+
     // Update is called once per frame
     void Update()
     {
@@ -46,9 +48,9 @@ public class PlayerCombatScript : MonoBehaviour
             if (Input.GetButtonDown("BKick"))
             {
                 BabyKick();
-                nextAttackTime = Time.time +1f / attackRate;
+                nextAttackTime = Time.time + 1f / attackRate;
             }
-            
+
         }
         if (currentHealth <= 0)
         {
@@ -58,21 +60,21 @@ public class PlayerCombatScript : MonoBehaviour
 
     }
     void BabyKick()
-            {
-                //Play Attack Animation
-                anim.SetTrigger("isBabyKicking");
-                // Detect enemies in range of attack
-                RefToKnockbackCollider.enabled = true;
-                RefToKnockback.enabled = true;
-                Collider2D[] EnemiesHit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-                // Damage them
-               
-                foreach (Collider2D enemy in EnemiesHit)
-                {
-                    enemy.GetComponent<SlimeMobScript>().TakeDamage(25);
-                }
-                StartCoroutine(ColliderTimer(RefToKnockback,RefToKnockbackCollider));
-            }
+    {
+        //Play Attack Animation
+        anim.SetTrigger("isBabyKicking");
+        // Detect enemies in range of attack
+        RefToKnockbackCollider.enabled = true;
+        RefToKnockback.enabled = true;
+        Collider2D[] EnemiesHit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        // Damage them
+
+        foreach (Collider2D enemy in EnemiesHit)
+        {
+            enemy.GetComponent<SlimeMobScript>().TakeDamage(25);
+        }
+        StartCoroutine(ColliderTimer(RefToKnockback, RefToKnockbackCollider));
+    }
     public void TakeDamage(int Damage)
     {
         currentHealth -= Damage;
@@ -82,18 +84,25 @@ public class PlayerCombatScript : MonoBehaviour
     }
     public void onDeath()
     {
-      
-       anim.SetTrigger("hasDied");
-      
 
-        
-       hasDied = true;
-       StartCoroutine(RestartScene());
-      
+        if (RefToDialogueManager.HasSentenceEnded == true)
+        {
+            RefToDialogueTrigger.TriggerDialogue();
+            RefToDialogueManager.HasSentenceEnded = false;
+            anim.SetTrigger("hasDied");
+            hasDied = true;
+            StartCoroutine(RestartScene());
 
-        
+            
+        }
+
+
+
+
+
+
     }
-    
+
     private void OnDrawGizmosSelected()
     {
         if (attackPoint == null)
@@ -103,19 +112,20 @@ public class PlayerCombatScript : MonoBehaviour
     IEnumerator ColliderTimer(Knockback RefToKnockback, CapsuleCollider2D RefToKnockbackCollider)
     {
         if (attackPoint != null)
-       {
-           yield return new WaitForSeconds(0.5f);
-           RefToKnockbackCollider.enabled = false;
+        {
+            yield return new WaitForSeconds(0.5f);
+            RefToKnockbackCollider.enabled = false;
             RefToKnockback.enabled = false;
-       }
+        }
     }
     IEnumerator RestartScene()
     {
-       yield return new WaitForSeconds(2);
-       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
-    
+
 
 
 }

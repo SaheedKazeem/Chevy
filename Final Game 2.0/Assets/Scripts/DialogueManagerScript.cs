@@ -10,6 +10,7 @@ public class DialogueManagerScript : MonoBehaviour
     public Animator RefToAnimator;
     public TextMeshProUGUI nameText, dialogueText;
     public GameObject RefToDialogueBox, RefToSkipButton;
+    public bool HasSentenceEnded;
 
     Queue<string> sentences;
     // Start is called before the first frame update

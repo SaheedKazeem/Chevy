@@ -1275,6 +1275,28 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 2315100969785545875}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1351738117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8931638541987077541, guid: f70c62151281a3349a1456d2cbfe6fc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 500019011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &1351738122
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351738117}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.058311224, y: 0.25}
+  m_Size: {x: 0.61662245, y: 0.61662245}
+  m_Direction: 0
 --- !u!1 &1421450604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,6 +1582,96 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1634469259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1634469262}
+  - component: {fileID: 1634469261}
+  - component: {fileID: 1634469260}
+  - component: {fileID: 1634469263}
+  m_Layer: 0
+  m_Name: PlotTrig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1634469260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634469259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9d00f4b4b3292419567f728d0e17c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RefToDialogueBox: {fileID: 1226813825}
+  RefToDialogueTrigger: {fileID: 1634469263}
+--- !u!61 &1634469261
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634469259}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.0930471, y: -0.0058962703}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 17.893948, y: 1.0117925}
+  m_EdgeRadius: 0
+--- !u!4 &1634469262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634469259}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.93, y: -16.3, z: 0}
+  m_LocalScale: {x: 1, y: 5.1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1634469263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634469259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b024bb88e58426b45acb6fc4ba655e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: What you need to do
+    sentences:
+    - If you are done dillydallying, you should go to the end of the road of trees
+    - There's a girl that may help with your little identity crisis
 --- !u!224 &1642297116 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 717462488358536880, guid: b98bdfa1286ae814ab4b46cea51d7329,
@@ -3377,6 +3489,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1899674903}
   - component: {fileID: 1899674902}
+  - component: {fileID: 1899674906}
+  - component: {fileID: 1899674905}
+  - component: {fileID: 1899674904}
   m_Layer: 0
   m_Name: NekoSit_0
   m_TagString: Untagged
@@ -3449,6 +3564,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1899674904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899674901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b024bb88e58426b45acb6fc4ba655e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: annoying girl
+    sentences:
+    - AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+    - Finally a dashing young they/them/it/caped delinquent has came to my aid, Alas
+      I don't have use for you
+    - Wait, maybe I do! I lost my cat and if you help me find Delilah, I'll give
+      you a wee philosophy lesson
+--- !u!114 &1899674905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899674901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9d00f4b4b3292419567f728d0e17c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RefToDialogueBox: {fileID: 1226813825}
+  RefToDialogueTrigger: {fileID: 1899674904}
+--- !u!61 &1899674906
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899674901}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.9166666}
+    newSize: {x: 0.375, y: 0.71875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.9166666}
+  m_EdgeRadius: 0
 --- !u!1 &1958859060
 GameObject:
   m_ObjectHideFlags: 0
@@ -10841,6 +11016,12 @@ PrefabInstance:
       propertyPath: dialogue.sentences.Array.data[3]
       value: You can crouch by pressing down and open up the pause menu by either
         pressing escape or the middle panel on your controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315100968559404304, guid: d17988519f3851943a8776e04db48699,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Press X on your controller to Jump and O to dash (or if you didn't listen
+        to me you can use spacebar to jump and left shift to dash)
       objectReference: {fileID: 0}
     - target: {fileID: 2315100968559404305, guid: d17988519f3851943a8776e04db48699,
         type: 3}

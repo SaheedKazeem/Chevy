@@ -60,19 +60,19 @@ namespace MasterController
             _frameClamp = _moveClamp;
             PlayerCombatScript RefToPlayerCombatScript;
             RefToPlayerCombatScript = GetComponent<PlayerCombatScript>();
-            if (RefToPlayerCombatScript.hasDied == false)
-            {
-                RunCollisionChecks();
 
-                CalculateCrouch();
-                CalculateWalk();
-                CalculateJumpApex();
-                CalculateGravity();
-                CalculateJump();
-                CalculateDash();
-                MoveCharacter();
 
-            }
+            RunCollisionChecks();
+
+            CalculateCrouch();
+            CalculateWalk();
+            CalculateJumpApex();
+            CalculateGravity();
+            CalculateJump();
+            CalculateDash();
+            MoveCharacter();
+
+
 
         }
 

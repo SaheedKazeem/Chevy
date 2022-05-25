@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using UnityEngine.SceneManagement;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MasterController;
@@ -81,9 +82,15 @@ public class PlayerCombatScript : MonoBehaviour
     }
     public void onDeath()
     {
-       
+      
        anim.SetTrigger("hasDied");
+      
+
+        
        hasDied = true;
+       StartCoroutine(RestartScene());
+      
+
         
     }
     
@@ -101,6 +108,12 @@ public class PlayerCombatScript : MonoBehaviour
            RefToKnockbackCollider.enabled = false;
             RefToKnockback.enabled = false;
        }
+    }
+    IEnumerator RestartScene()
+    {
+       yield return new WaitForSeconds(2);
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
     }
     
 

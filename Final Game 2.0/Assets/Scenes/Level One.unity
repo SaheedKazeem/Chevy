@@ -3691,6 +3691,7 @@ MonoBehaviour:
   dialogueText: {fileID: 835300417}
   RefToDialogueBox: {fileID: 1226813825}
   RefToSkipButton: {fileID: 2047278940}
+  HasSentenceEnded: 0
 --- !u!1 &1958859060
 GameObject:
   m_ObjectHideFlags: 0

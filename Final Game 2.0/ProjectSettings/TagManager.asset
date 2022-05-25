@@ -7,6 +7,7 @@ TagManager:
   - TileMap
   - Health Bar
   - Enemy
+  - Jane
   layers:
   - Default
   - TransparentFX

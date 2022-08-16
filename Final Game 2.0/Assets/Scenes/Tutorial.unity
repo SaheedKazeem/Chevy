@@ -1819,6 +1819,78 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2622446215535224180}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1681746763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1681746767}
+  - component: {fileID: 1681746765}
+  - component: {fileID: 1681746764}
+  m_Layer: 0
+  m_Name: Jane Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1681746764
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681746763}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1681746765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681746763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9d00f4b4b3292419567f728d0e17c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RefToDialogueBox: {fileID: 1226813825}
+  RefToDialogueTrigger: {fileID: 1899674904}
+--- !u!4 &1681746767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681746763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.78, y: -33.33, z: -36.724403}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1716993871
 GameObject:
   m_ObjectHideFlags: 0
@@ -3518,12 +3590,11 @@ GameObject:
   - component: {fileID: 1899674903}
   - component: {fileID: 1899674902}
   - component: {fileID: 1899674906}
-  - component: {fileID: 1899674905}
+  - component: {fileID: 1899674908}
   - component: {fileID: 1899674904}
-  - component: {fileID: 1899674907}
   m_Layer: 0
-  m_Name: NekoSit_0
-  m_TagString: Untagged
+  m_Name: Hey Jane
+  m_TagString: Jane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3613,20 +3684,6 @@ MonoBehaviour:
       I don't have use for you
     - Wait, maybe I do! I lost my cat and if you help me find Delilah, I'll give
       you a wee philosophy lesson
---- !u!114 &1899674905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1899674901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab9d00f4b4b3292419567f728d0e17c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RefToDialogueBox: {fileID: 1226813825}
-  RefToDialogueTrigger: {fileID: 1899674904}
 --- !u!61 &1899674906
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3637,10 +3694,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.120248795, y: 0.18604887}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3651,9 +3708,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.9166666}
+  m_Size: {x: 1.2404976, y: 2.2887642}
   m_EdgeRadius: 0
---- !u!114 &1899674907
+--- !u!114 &1899674908
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3662,7 +3719,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1899674901}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6646c1262a2e4784cb76824e239e7b89, type: 3}
+  m_Script: {fileID: 11500000, guid: 286452c59cf475c49ac376bd4fec4bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ReftoDialogueManager: {fileID: 1859468779}

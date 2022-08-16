@@ -84,17 +84,20 @@ public class PlayerCombatScript : MonoBehaviour
     }
     public void onDeath()
     {
-
-        if (RefToDialogueManager.HasSentenceEnded == true)
+        if (gameObject != null)
         {
-            RefToDialogueTrigger.TriggerDialogue();
-            RefToDialogueManager.HasSentenceEnded = false;
-            anim.SetTrigger("hasDied");
-            hasDied = true;
-            StartCoroutine(RestartScene());
+            if (RefToDialogueManager.HasSentenceEnded == true)
+            {
+                RefToDialogueTrigger.TriggerDialogue();
+                RefToDialogueManager.HasSentenceEnded = false;
+                anim.SetTrigger("hasDied");
+                hasDied = true;
+                StartCoroutine(RestartScene());
 
-            
+
+            }
         }
+
 
 
 
@@ -110,7 +113,7 @@ public class PlayerCombatScript : MonoBehaviour
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
     IEnumerator ColliderTimer(Knockback RefToKnockback, CapsuleCollider2D RefToKnockbackCollider)
-    {
+    {                                                                                                                                                                                                                               
         if (attackPoint != null)
         {
             yield return new WaitForSeconds(0.5f);

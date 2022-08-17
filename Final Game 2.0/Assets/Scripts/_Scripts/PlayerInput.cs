@@ -32,25 +32,13 @@ namespace TarodevController {
 
         private FrameInput Gather() {
             return new FrameInput {
-                JumpDown = _jump.WasPressedThisFrame(),
+                JumpDown = _jump.wasPressedThisFrame(),
                 JumpHeld = _jump.IsPressed(),
                 DashDown = _dash.WasPressedThisFrame(),
                 AttackDown = _attack.WasPressedThisFrame(),
                 Move = _move.ReadValue<Vector2>()
             };
         }
-
-#if (ENABLE_LEGACY_INPUT_MANAGER)
-        private FrameInput Gather() {
-            return new FrameInput {
-                JumpDown = Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.C),
-                JumpHeld = Input.GetButton("Jump") || Input.GetKey(KeyCode.C),
-                DashDown = Input.GetKeyDown(KeyCode.X),
-                AttackDown = Input.GetKeyDown(KeyCode.Z),
-                Move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")),
-            };
-        }
-#endif
     }
 
     public struct FrameInput {

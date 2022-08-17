@@ -1,7 +1,8 @@
 using UnityEngine;
+
+#if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
-
-
+#endif
 
 namespace TarodevController {
     public class PlayerInput : MonoBehaviour {
@@ -11,6 +12,7 @@ namespace TarodevController {
             FrameInput = Gather();
         }
 
+#if (ENABLE_INPUT_SYSTEM)
         private PlayerInputActions _actions;
         private InputAction _move, _jump, _dash, _attack;
 
@@ -32,13 +34,25 @@ namespace TarodevController {
 
         private FrameInput Gather() {
             return new FrameInput {
-                JumpDown = _jump.wasPressedThisFrame(),
+                JumpDown = _jump.WasPressedThisFrame(),
                 JumpHeld = _jump.IsPressed(),
                 DashDown = _dash.WasPressedThisFrame(),
                 AttackDown = _attack.WasPressedThisFrame(),
                 Move = _move.ReadValue<Vector2>()
             };
         }
+
+#elif (ENABLE_LEGACY_INPUT_MANAGER)
+        private FrameInput Gather() {
+            return new FrameInput {
+                JumpDown = Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.C),
+                JumpHeld = Input.GetButton("Jump") || Input.GetKey(KeyCode.C),
+                DashDown = Input.GetKeyDown(KeyCode.X),
+                AttackDown = Input.GetKeyDown(KeyCode.Z),
+                Move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")),
+            };
+        }
+#endif
     }
 
     public struct FrameInput {

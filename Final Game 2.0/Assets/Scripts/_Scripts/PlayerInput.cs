@@ -1,5 +1,4 @@
 using UnityEngine;
-if (ENABLE_INPUT_SYSTEM)
 using UnityEngine.InputSystem;
 
 
@@ -12,7 +11,6 @@ namespace TarodevController {
             FrameInput = Gather();
         }
 
-if (ENABLE_INPUT_SYSTEM)
         private PlayerInputActions _actions;
         private InputAction _move, _jump, _dash, _attack;
 

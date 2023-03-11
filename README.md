@@ -1,3 +1,2 @@
-# FinalGameUniProject
-A repository for my Final Game because my hard drive died and I lost everything...
-Learning how to use GitHub so this never happens again :(
+# Chevy
+A nice lil project I used to graduate with
